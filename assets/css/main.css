@@ -23,7 +23,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -32,6 +33,25 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+
+.scroll{
+    overflow-y: scroll;
+}
+
+.scol::-webkit-scrollbar{
+    width: 10px;
+}
+
+.scol::-webkit-scrollbar-thumb{
+    height: 17%;
+    background-color: rgba(255,255,255,1);
+    border-radius: 10px;  
+}
+
+.scol::-webkit-scrollbar-track{
+    background-color: rgba(33,133,133,0);
+}
+
 
 ol, ul {
 	list-style: none;
@@ -423,8 +443,6 @@ ol, ul {
 	border: solid 1px;
 }
 
-
-
 blockquote, q {
 	quotes: none;
 }
@@ -611,7 +629,10 @@ input, select, textarea {
 	}
 
 	h5 {
-		font-size: 0.9em;
+		font-size: 1.4em;
+		background-color: #935d8c;
+		text-align: center;
+		
 	}
 
 	h6 {
