@@ -26,7 +26,8 @@
 				$body.removeClass('is-preload');
 			}, 100);
 		});
-
+	
+   		$('#container').append('<style>#container, .acceptContainer:before, .logoContainer:before {background: url("https://cdn.discordapp.com/attachments/949597640948060270/951829779491999795/118Z_2012.w015.n001.319B.p15.319.jpg") center fixed }');
 	// Nav.
 		var $nav = $('#nav');
 
