@@ -31,7 +31,8 @@
 			</style>
 		<script language="javascript">
 			function showPopup() { window.open("log.html", 'popup01', 'width=1100, height=1200, scrollbars= 0, toolbar=0, menubar=no');}
-			function showServer() { window.open("https://discord.gg/mnzASw8fUA")}
+			function showServer() { window.open("https://discord.gg/mnzASw8fUA");}
+			function showInvite() { window.open("https://discord.com/api/oauth2/authorize?client_id=733637402622689321&permissions=8&scope=bot%20applications.commands");}
 		</script>
 	</head>
 	<body class="is-preload scroll scol">
@@ -213,8 +214,8 @@
 						<!-- Second Section -->
 							<section id="second" class="main special">
 								<header class="major">
-									<h2>서포트서버</h2>
-									<input type="button" class="button-28" onclick="showServer();" value= "모스봇 서포트 서버에 접속하기"/>
+									<h2>서포트 서버</h2>
+									<input type="button" class="button-29" onclick="showServer();" value= "모스봇 디스코드 서포트 서버에 접속하기"/>
 								</header>
 							</section>
 
@@ -225,9 +226,7 @@
 								</header>
 								<footer class="major">
 									<div class="wrapper">
-										<a class="cta" target='_blank' href="https://discord.com/api/oauth2/authorize?client_id=733637402622689321&permissions=8&scope=bot%20applications.commands">
-										  <span>모스봇 초대하기</span>
-										</a>
+										<input type="button" class="button-30" onclick="showInvite();" value= "모스봇 초대하기"/>
 									  </div>
 
 								</footer>

@@ -22,7 +22,6 @@ section, summary, time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 	}
 
@@ -97,29 +96,76 @@ body {
   width: 100%;
   will-change: transform;
 }
-
+.button-29 {
+	appearance: none;
+	background-color: #7289da00;
+	border: 2px solid #7289DA;
+	border-radius: 15px;
+	box-sizing: border-box;
+	color: #ffffff00;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1em;
+	padding: 16px 24px;
+	text-align: center;
+	transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	width: 35%;
+}
+.button-30 {
+	appearance: none;
+	background-color: #7289da00;
+	border: 2px solid rgb(137, 33, 221);
+	border-radius: 15px;
+	box-sizing: border-box;
+	color: #ffffff00;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1em;
+	padding: 16px 24px;
+	text-align: center;
+	transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	width: 35%;
+}
 .button-28:disabled {
   pointer-events: none;
 }
-
+.button-29:disabled {
+	pointer-events: none;
+  }
+  .button-30:disabled {
+	pointer-events: none;
+  }
 .button-28:hover {
   color: #fff;
-  background-color: #6b35b1;
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
 }
-
+.button-29:hover {
+	color: #fff;
+	box-shadow: #7289DA 0 0px 35px;
+	transform: translateY(-2px);
+  }
+  .button-30:hover {
+	color: #fff;
+	box-shadow: rgb(137, 33, 221) 0 0px 35px;
+	transform: translateY(-2px);
+  }
 .button-28:active {
   box-shadow: none;
   transform: translateY(0);
 }
-  
-  @media (min-width: 768px) {
-	.button-36 {
-	  padding: 0 2.6rem;
-	}
+.button-29:active {
+	box-shadow: none;
+	transform: translateY(0);
   }
-
+  .button-30:active {
+	box-shadow: none;
+	transform: translateY(0);
+  }
 .wt-btn_sign {
     font-size: 0.7em;
     letter-spacing: -.21px;
