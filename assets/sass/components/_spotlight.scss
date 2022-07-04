@@ -1,5 +1,5 @@
 ///
-/// Stellar by HTML5 UP
+/// Fractal by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -11,83 +11,71 @@
 		@include vendor('align-items', 'center');
 		margin: 0 0 _size(element-margin) 0;
 
-		.content {
-			@include vendor('flex', '1');
-
-			> :last-child {
-				margin-bottom: 0;
-			}
-
-			header {
-				&.major {
-					margin: 0 0 _size(element-margin) 0;
-				}
-			}
-		}
-
 		.image {
-			display: inline-block;
-			margin-left: 4em;
-			padding: 0.65em;
+			width: 30%;
 			border-radius: 100%;
-			border: solid 1px;
+			margin: 0 (_size(element-margin) * 1.5) 0 0;
+			display: block;
 
 			img {
 				display: block;
 				border-radius: 100%;
-				width: 16em;
+				width: 100%;
 			}
 		}
 
-		@include breakpoint('<=medium') {
-			@include vendor('flex-direction', 'column-reverse');
-			text-align: center;
+		.content {
+			width: 70%;
+
+			> :last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		&:nth-child(2n) {
+			@include vendor('flex-direction', 'row-reverse');
+
+			.image {
+				margin: 0 0 0 (_size(element-margin) * 1.5);
+			}
 
 			.content {
-				@include vendor('flex', '0 1 auto');
-				width: 100%;
+				text-align: right;
+			}
+		}
 
-				header {
-					&.major {
-						h2 {
-							&:after {
-								margin-left: auto;
-								margin-right: auto;
+		// Small.
+			@include breakpoint('<=small') {
+
+				// Landscape.
+					@include orientation(landscape) {
+						.image {
+							margin: 0 _size(element-margin) 0 0;
+						}
+
+						&:nth-child(2n) {
+							.image {
+								margin: 0 0 0 _size(element-margin);
 							}
 						}
 					}
-				}
 
-				.actions {
-					@include vendor('justify-content', 'center');
-					width: calc(100% + #{_size(element-margin) * 0.5});
-				}
+				// Portrait.
+					@include orientation(portrait) {
+						@include vendor('flex-direction', 'column !important');
+
+						.image {
+							width: 100%;
+							max-width: 60%;
+							margin: 0 0 _size(element-margin) 0 !important;
+						}
+
+						.content {
+							width: 100%;
+							text-align: center !important;
+						}
+					}
+
 			}
 
-			.image {
-				@include vendor('flex', '0 1 auto');
-				margin-left: 0;
-				margin-bottom: _size(element-margin);
-			}
-		}
-
-		@include breakpoint('<=small') {
-			.image {
-				padding: 0.35em;
-
-				img {
-					width: 12em;
-				}
-			}
-		}
 	}
-
-	@mixin color-spotlight($p: null) {
-		.spotlight {
-			.image {
-				border-color: _palette($p, border);
-			}
-		}
-	}
-
-	@include color-spotlight;

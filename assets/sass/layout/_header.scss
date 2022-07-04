@@ -1,5 +1,5 @@
 ///
-/// Stellar by HTML5 UP
+/// Fractal by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -7,110 +7,203 @@
 /* Header */
 
 	#header {
-		@include padding(5em, 5em, (0, 0, -2em, 0));
-		text-align: center;
+		@include color(accent1);
+		@include padding(4.5em, 0);
+		@include vendor('align-items', 'center');
+		@include vendor('display', 'flex');
+		@include vendor('justify-content', 'center');
+		background-image: url('images/overlay.png'), url('images/pattern-size1.svg');
+		background-position: top left, center center;
+		background-attachment: fixed, fixed;
+		background-size: auto, cover;
+		height: 100vh;
+		min-height: 35em;
 
 		h1 {
-			margin: 0 0 (_size(element-margin) * 0.125) 0;
+			font-size: 3.25em;
+			font-weight: _font(weight-bold);
+			margin-bottom: _size(element-margin) * 0.25;
 		}
 
 		p {
-			font-size: 1.25em;
-			letter-spacing: _font(letter-spacing);
+			font-size: 1.5em;
+			line-height: 1.35em;
+
+			br {
+				display: inline;
+			}
 		}
 
-		&.alt {
-			@include padding(6em, 5em, (1em, 0, 0, 0));
+		.content {
+			@include vendor('transition', ('opacity 0.5s ease', 'transform 1s ease'));
+			@include vendor('transform', 'translateX(0)');
+			opacity: 1;
+			text-align: right;
+			margin: (_size(element-margin) * -1.75) (_size(element-margin) * 2) 0 0;
 
-			h1 {
-				font-size: 3.25em;
+			> :last-child {
+				margin-bottom: 0;
 			}
 
-			> * {
-				@include vendor('transition', 'opacity 3s ease');
-				@include vendor('transition-delay', '0.5s');
+			.actions {
+				@include vendor('justify-content', 'flex-end');
+			}
+		}
+
+		.image {
+			@include vendor('transition', ('opacity 1s ease', 'transform 1s ease'));
+			@include vendor('transform', 'translateY(0)');
+			opacity: 1;
+
+			img {
+				@include vendor('transition', 'opacity 0.75s ease');
+				@include vendor('transition-delay', '0.75s');
 				opacity: 1;
 			}
+		}
 
-			.logo {
-				@include vendor('transition', (
-					'opacity 1.25s ease',
-					'transform 0.5s ease'
-				));
-				@include vendor('transition-delay', '0s');
-				display: block;
-				margin: 0 0 (_size(element-margin) * 0.75) 0;
+		// Large.
+			@include breakpoint('<=large') {
+				background-image: url('images/overlay.png'), url('images/pattern-size2.svg');
+			}
 
-				img {
-					display: block;
-					margin: 0 auto;
-					max-width: 75%;
+		// Medium.
+			@include breakpoint('<=medium') {
+				height: auto;
+				min-height: 0;
+
+				.content {
+					margin: (_size(element-margin) * -1) (_size(element-margin) * 2) 0 0;
+
+					.actions {
+						@include vendor('justify-content', 'center');
+					}
 				}
-			}
-		}
 
-		@include breakpoint('<=large') {
-			@include padding(4em, 4em, (0, 0, -2em, 0));
+				// Portrait.
+					@include orientation(portrait) {
+						@include padding(6em, 3em);
+						@include vendor('flex-direction', 'column-reverse');
 
-			&.alt {
-				@include padding(5em, 4em, (1em, 0, 0, 0));
-			}
-		}
+						.content {
+							display: block;
+							width: 100%;
+							text-align: center;
+							margin: 0 0 _size(element-margin) 0;
+						}
 
-		@include breakpoint('<=medium') {
-			@include padding(4em, 3em, (0, 0, -2em, 0));
+						.image {
+							overflow: hidden;
+						}
+					}
 
-			&.alt {
-				@include padding(4em, 3em, (1em, 0, 0, 0));
-			}
-		}
-
-		@include breakpoint('<=small') {
-			@include padding(3em, 2em, (0, 0, -1em, 0));
-
-			p {
-				font-size: 1em;
-				letter-spacing: 0;
-
-				br {
-					display: none;
-				}
 			}
 
-			&.alt {
-				@include padding(3em, 2em, (1em, 0, 0, 0));
+		// Small.
+			@include breakpoint('<=small') {
+				background-image: url('images/overlay.png'), url('images/pattern-size3.svg');
 
 				h1 {
-					font-size: 2.5em;
+					font-size: 2em;
 				}
+
+				p {
+					font-size: 1em;
+					line-height: inherit;
+				}
+
+				// Landscape.
+					@include orientation(landscape) {
+						@include padding(2em, 2em);
+
+						.content {
+							margin: 0 _size(element-margin) _size(element-margin) 0;
+						}
+
+						.image {
+							font-size: 0.8em;
+							width: 15em;
+							max-width: 20vw;
+
+							.inner, &:before, &:after {
+								font-size: 0.8em;
+							}
+						}
+					}
+
+				// Portrait.
+					@include orientation(portrait) {
+						@include padding(3em, 1.5em);
+
+						.image {
+							font-size: 0.6em;
+							max-width: 60vw;
+						}
+					}
+
 			}
-		}
 
-		@include breakpoint('<=xsmall') {
-			@include padding(3em, 1.5em, (0, 0, -1em, 0));
+		// XSmall.
+			@include breakpoint('<=xsmall') {
 
-			&.alt {
-				@include padding(3em, 1.5em, (1em, 0, 0, 0));
+				// Landscape.
+					@include orientation(landscape) {
+						@include padding(2em, 1.5em);
+
+						.image {
+							font-size: 0.7em;
+						}
+
+						.actions {
+							font-size: 0.8em;
+						}
+					}
+
+				// Portrait.
+					@include orientation(portrait) {
+						@include padding(2em, 1em);
+					}
+
 			}
-		}
 
-		@include breakpoint('<=xxsmall') {
-			@include padding(2.5em, 1em, (0, 0, -1em, 0));
-
-			&.alt {
-				@include padding(2.5em, 1em, (1em, 0, 0, 0));
+		// Mobile.
+			body.is-mobile & {
+				background-attachment: scroll, scroll;
 			}
-		}
 
-		body.is-preload & {
-			&.alt {
-				> * {
+		// Preload.
+			body.is-preload & {
+				.content {
+					@include vendor('transform', 'translateX(2em)');
 					opacity: 0;
 				}
 
-				.logo {
-					@include vendor('transform', 'scale(0.8) rotate(-30deg)');
+				.image {
+					@include vendor('transform', 'translateY(4em)');
+					opacity: 0;
+
+					img {
+						opacity: 0;
+					}
 				}
+
+				// Medium.
+					@include breakpoint('<=medium') {
+
+						// Portrait.
+							@include orientation(portrait) {
+								.content {
+									@include vendor('transform', 'none');
+									opacity: 1;
+								}
+
+								.image {
+									@include vendor('transform', 'translateY(2em)');
+								}
+							}
+
+					}
+
 			}
-		}
+
 	}

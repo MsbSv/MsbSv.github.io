@@ -1,5 +1,5 @@
 ///
-/// Stellar by HTML5 UP
+/// Fractal by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -13,92 +13,59 @@
 	}
 
 	header {
-		&.major {
-			margin-bottom: (_size(element-margin) * 1.5);
+		p {
+			position: relative;
+			margin: 0 0 (_size(element-margin) * 0.75) 0;
 
-			h2 {
-				font-size: 2em;
-
-				&:after {
-					display: block;
-					content: '';
-					width: 3.25em;
-					height: 2px;
-					margin: (_size(element-margin) * 0.35) 0 (_size(element-margin) * 0.5) 0;
-					border-radius: 2px;
-
-					section.special &, article.special & {
-						margin-left: auto;
-						margin-right: auto;
-					}
-				}
-			}
-
-			p {
-				font-size: 1.25em;
-				letter-spacing: _font(letter-spacing);
-			}
-
-			&.special {
-				text-align: center;
-
-				h2 {
-					&:after {
-						margin-left: auto;
-						margin-right: auto;
-					}
-				}
-			}
-		}
-	}
-
-	footer {
-		&.major {
-			margin-top: (_size(element-margin) * 1.5);
-		}
-	}
-
-	@include breakpoint('<=small') {
-		header {
-			&.major {
-				margin-bottom: 0;
-
-				h2 {
-					font-size: 1.5em;
-				}
-
-				p {
-					font-size: 1em;
-					letter-spacing: 0;
-
+			// Small.
+				@include breakpoint('<=small') {
 					br {
 						display: none;
 					}
 				}
-			}
+
 		}
 
-		footer {
-			&.major {
-				margin-top: 0;
-			}
+		h2 + p {
+			font-size: 1.25em;
+			margin-top: (_size(element-margin) * -0.25);
+			line-height: 1.5em;
 		}
-	}
 
-	@mixin color-section($p: null) {
-		header {
-			&.major {
-				h2 {
-					&:after {
-						background-color: _palette($p, border);
+		h3 + p {
+			font-size: 1.1em;
+			margin-top: (_size(element-margin) * -0.125);
+			line-height: 1.5em;
+		}
 
-						@if $p == 'invert' {
-							@include vendor('background-image', 'linear-gradient(90deg, #{_palette(accent1)}, #{_palette(accent3)}, #{_palette(accent5)})');
-						}
+		h4 + p,
+		h5 + p,
+		h6 + p {
+			font-size: 0.9em;
+			margin-top: (_size(element-margin) * -0.3);
+			line-height: 1.5em;
+		}
+
+		&.major {
+			margin: 0 0 (_size(element-margin) * 1.25) 0;
+			text-align: center;
+
+			&:after {
+				content: '';
+				border-bottom: solid (_size(border-width) * 2) _palette(border);
+				display: block;
+				width: 4em;
+				margin: _size(element-margin) auto 0 auto;
+			}
+
+			// Small.
+				@include breakpoint('<=small') {
+					margin: 0 0 _size(element-margin) 0;
+
+					p {
+						font-size: 1em;
 					}
 				}
-			}
+
 		}
 	}
-
-	@include color-section;

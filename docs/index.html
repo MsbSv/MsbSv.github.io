@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta property="og:title" content="문서 | 디스코드 모스봇" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://mosbot.cf/docs/" />
+<meta property="og:image" content="https://cdn.discordapp.com/attachments/949597640948060270/991212400600686632/MI.png" />
+<meta property="og:description" content="문서에서 모스봇에 대한 모든 정보를 확인해 보세요." />
+<meta name="theme-color" content="#d494ff">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+<link href="assets/images/MI.png" rel="icon"  type="image/icon type">
+<title>문서 | 디스코드 모스봇</title>
+<meta name="description" content="디스코드 봇, 모스봇의 문서입니다.">
+<meta name="author" content="Boss#3333">
+
+<!-- Stylesheet
+============================== -->
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+<!-- Font Awesome Icon -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
+<!-- Magnific Popup -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
+<!-- Highlight Syntax -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
+<!-- Custom Stylesheet -->
+<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+
+<link rel="stylesheet" type="text/css" href="assets/css/color-purple.css" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Hahmlet:wght@200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600&display=swap" rel="stylesheet">
+<body class="box" data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+<!-- Preloader -->
+<div class="preloader">
+  <div class="lds-ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<!-- Preloader End --> 
+
+<!-- Document Wrapper   
+=============================== -->
+<div id="main-wrapper"> 
+  
+  <!-- Header
+  ============================ -->
+  <header id="header" class="sticky-top"> 
+    <!-- Navbar -->
+    <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
+      <div class="container-fluid">
+        <!-- Sidebar Toggler -->
+		<button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span class="w-75"></span><span class="w-50"></span></button>
+		
+		<!-- Logo --> 
+        <a class="logo ml-md-3" href="index.html" title="모스봇 문서"> <img src="assets/images/ML.png" alt="모스봇 문서"/> </a> 
+		    <span class="text-2 ml-2">2022-06-30 업데이트</span> 
+        <!-- Logo End -->
+        
+		<!-- Navbar Toggler -->
+		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#header-nav"><span></span><span></span><span></span></button>
+        
+		<div id="header-nav" class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+            <li><a href="../index.html">메인</a></li>
+            <li><a target="_blank" href="#">개인정보처리방침</a></li>
+          </ul>
+        </div>
+        <ul class="social-icons social-icons-sm ml-lg-2 mr-2">
+          <li class="social-icons-dicord"><a data-toggle="tooltip" href="http://discord.gg/VsP65QuWbR" target="_blank" title="" data-original-title="서포트 서버 접속하기"><i class="fab fa-discord"></i></a></li>
+          <li class="social-icons-bot"><a data-toggle="tooltip" href="https://discord.com/api/oauth2/authorize?client_id=733637402622689321&permissions=412317248630&scope=bot%20applications.commands" target="_blank" title="" data-original-title="봇 초대하기"><i class="fa fa-robot"></i></a></li>
+          </ul>
+      </div>
+    </nav>
+    <!-- Navbar End --> 
+  </header>
+  <!-- Header End --> 
+  
+  <!-- Content
+  ============================ -->
+  <div id="content" role="main">
+    
+	<!-- Sidebar Navigation
+	============================ -->
+	<div class="idocs-navigation bg-light">
+      <ul class="nav flex-column ">
+        <li class="nav-item"><a class="nav-link active" href="#idocs_start">시작하기</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#idocs_invite">초대하기</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_makeDatabase">데이터베이스 만들기</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_deleteDatabase">데이터베이스 삭제하기</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_basic_cmd">기본 명령어</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_manage_cmd">관리 명령어</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_warn_cmd">경고 명령어</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_notice_cmd">공지사항 명령어</a>
+			<ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#idocs_notice_cmd_m">공지사항 만들기</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_notice_cmd_d">공지사항 삭제하기</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_notice_cmd_e">공지사항 수정하기</a></li>
+			      <li class="nav-item"><a class="nav-link" href="#idocs_notice_cmd_s">공지사항 올리기</a></li>
+          </ul>
+		</li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_game_cmd">게임 명령어</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#idocs_game_cmd_remember">기억력 게임</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_game_cmd_mypoint">내 포인트 보기</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_game_cmd_choose">뽑기 게임</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_game_cmd_slot">슬롯머신 게임</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_game_cmd_dice">주사위 게임</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_game_cmd_attend">출석하기</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_game_cmd_cointrade">코인 거래하기</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_game_cmd_coininfo">코인 정보 보기</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_game_cmd_rkpoint">포인트랭킹 보기</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_game_cmd_sdpoint">포인트 전송하기</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_datamanage_cmd">데이터 관리 명령어</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#idocs_datamanage_cmd_guild">서버 데이터 관리</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_datamanage_cmd_user">유저 데이터 관리</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_work_cmd">출근 명령어</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_level_cmd">레벨 명령어</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_research_cmd">분석 명령어</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_welcome_cmd">환영인사 명령어</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_review_cmd">후기 명령어</a>
+        </li>
+		<li class="nav-item"><a class="nav-link" href="#idocs_faq">[자주묻는 질문]</a></li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_source_credits">[출처]</a></li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_support">[서포트 서버]</a></li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_privacypolicy">[개인정보처리방침]</a>
+        </li>
+		<li class="nav-item"><a class="nav-link" href="#idocs_updatelog">[업데이트 로그]</a>
+			<ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="#v22-6">2022년 6월</a></li>
+        <li class="nav-item"><a class="nav-link" href="#v22-5">2022년 5월</a></li>
+        <li class="nav-item"><a class="nav-link" href="#v22-4">2022년 4월</a></li>
+        <li class="nav-item"><a class="nav-link" href="#v22-3">2022년 3월</a></li>
+        <li class="nav-item"><a class="nav-link" href="#v22-2">2022년 2월</a></li>
+        <li class="nav-item"><a class="nav-link" href="#v22-1">2022년 1월</a></li>
+            <li class="nav-item"><a class="nav-link" href="#v21-12">2021년 12월</a></li>
+        <li class="nav-item"><a class="nav-link" href="#v21-11">2021년 11월</a></li>
+            <li class="nav-item"><a class="nav-link" href="#v21-10">2021년 10월</a></li>
+            <li class="nav-item"><a class="nav-link" href="#v21-9">2021년 9월</a></li>
+            <li class="nav-item"><a class="nav-link" href="#v21-8">2021년 8월</a></li>
+          </ul>
+		</li>
+    
+      </ul>
+    </div>
+    
+    <!-- Docs Content
+	============================ -->
+    <div class="idocs-content">
+      <div class="container"> 
+        
+        <!-- 시작하기
+		============================ -->
+        <section id="idocs_start">
+        <h1>「모스봇 문서」</h1>
+        <p class="lead">이곳에서 모스봇에 대한 모든 정보를 찾을 수 있습니다.</p>
+		<hr>
+		<div class="row">
+			<div class="col-sm-6 col-lg-4">
+				<ul class="list-unstyled">
+					<li><strong>봇 정보:</strong> 모스봇#1008</li>
+					<li><strong>봇 개발자:</strong> Boss#3333</li>
+				</ul>
+			</div>
+			<div class="col-sm-6 col-lg-4">
+				<ul class="list-unstyled">
+					<li><strong class="font-weight-700">봇 운영 시작일:</strong> 2020-07-17</li>
+					<li><strong>봇 마지막 업데이트:</strong> 2022-06-28</li>
+				</ul>
+			</div>
+		</div>
+        <p class="alert alert-info">궁금한 점이 있다면 <a target="_blank" href="http://discord.gg/VsP65QuWbR"><i class="fas fa-external-link-alt"></i>서포트 서버</a>에서 질문해 주시거나 <i class="fab fa-discord"></i> <b>Boss#3333</b>으로 연락 부탁드립니다.</p>
+        </section>
+        
+		<hr class="divider">
+		
+        <!-- 초대하기
+		============================ -->
+        <section id="idocs_invite">
+          <h1>초대하기</h1>
+          <p class="lead">아래 방법 중 하나를 따라해 모스봇을 초대할 수 있습니다.</p>
+          <ol>
+            <li>디스코드 내에서 모스봇의 프로필을 눌러 <strong>[서버에 추가]</strong>버튼을 눌러 본인의 디스코드 서버로 초대할 수 있습니다.</li>
+            <li><a target="_blank" href="https://discord.com/api/oauth2/authorize?client_id=733637402622689321&permissions=412317248630&scope=bot%20applications.commands"><i class="fas fa-external-link-alt"></i>링크</a>를 눌러 본인의 디스코드 서버로 초대할 수 있습니다.</li>
+          </ol>
+          <p class="alert alert-info">모스봇을 이용하기 전에 <a href="#idocs_privacypolicy" ><i class="fas fa-external-link-alt"></i>개인정보처리방침</a>을 읽어 주세요.</p>
+        
+        </section>
+        
+		<hr class="divider">
+		
+        <!-- 데이터베이스 만들기
+		============================ -->
+        <section id="idocs_makeDatabase">
+          <h1>데이터베이스 만들기</h1>
+          <p>모스봇을 서버에서 이용하기 위해서는 데이터베이스가 필요합니다.</p><p>데이터베이스에는 <code>기본 데이터베이스</code>, <code>후기 데이터베이스</code>가 존재합니다.</section>
+          <p><code>기본 데이터베이스</code>에는 모스봇을 이용한 유저의 데이터(포인트, 출석 정보 등),<br>모스봇의 게임 데이터(꽝의 개수, 게임 활성화 여부 등), 경고 데이터(경고자, 경고수, 경고이유)들을<br> 저장하기 위해 필요한 데이터베이스 입니다.</p>
+          <p><code>기본 데이터베이스</code>의 구조는 이러합니다.</p>
+          <pre><code>
+[기본 데이터베이스] ＜── 데이터베이스만 만들면 하위 데이터베이스들은 자동 생성됩니다.
+       │
+       ├─[유저 데이터베이스]
+       │       ├─(유저 데이터)
+       │       │     └─포인트 정보, 출석 정보들
+       │       ├─(유저 데이터)
+       │       │     └─......
+       │       └─......
+       │             └─......
+       │
+       ├─[서버 설정 데이터베이스]
+       │       ├─(게임 설정 데이터)
+       │       └─(기타 데이터)
+       │
+       └─[경고 데이터베이스]
+               ├─(유저 데이터)
+               │      └─경고 정보들
+               ├─(유저 데이터)
+               │      └─......
+               └─......
+                      └─......
+        </code></pre>
+        <p><code>기본 데이터베이스</code>는 서버 당 하나만 필요하며<br><code>기본 데이터베이스</code>를 만들기 위해서는 아래 명령어를 입력해야 합니다.</p>
+        <p><code class="slash"> /데이터관리 서버데이터관리 종류:기본 데이터베이스 옵션:데이터 베이스 설정하기 </code></p>
+        <a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991289231416766524/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991289231416766524/unknown.png" alt=""></a><br>
+        
+        <p class="alert alert-info">옵션에 대한 정보는 <a target="" href="#idocs_datamanage">데이터 관리 명령어</a> 카테고리에서 확인하실 수 있습니다.</p>
+      <br>
+        <p><code>후기 데이터베이스</code>에는 모스봇을 이용해 <br>후기를 올렸을 때의 정보(후기 대상, 작성자, 개수)를 저장하기 위해 필요한 데이터베이스 입니다.</p>
+          <p><code>후기 데이터베이스</code>의 구조는 이러합니다.</p>
+          <pre><code>
+[후기 데이터베이스] ＜── 데이터베이스만 만들면 하위 데이터베이스들은 자동 생성됩니다.
+      ├─(유저 데이터)
+      │     └─후기 개수, 후기 정보들
+      ├─(유저 데이터)
+      │     └─......
+      └─......
+            └─......
+        </code></pre>
+        <p><code>후기 데이터베이스</code>는 서버 당 하나만 필요하며<br><code>후기 데이터베이스</code>를 만들기 위해서는 아래 명령어를 입력해야 합니다.</p>
+        <p><code class="slash"> /데이터관리 서버데이터관리 종류:후기 데이터베이스 옵션:데이터 베이스 설정하기 </code></p>
+        <a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991289403639087164/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991289403639087164/unknown.png" alt=""></a><br>
+        
+        <p class="alert alert-info">옵션에 대한 정보는 <a href="#idocs_datamanage_cmd">데이터 관리 명령어</a> 카테고리에서 확인하실 수 있습니다.</p>
+        </section>
+		<hr class="divider">
+		        
+		<!-- 데이터베이스 지우기
+		============================ -->
+        <section id="idocs_deleteDatabase">
+          <h1>데이터베이스 지우기</h1>
+          <p>서버의 데이터베이스에 저장된 모든 정보들을 삭제할 수 있습니다.</p>
+          <p><code>기본 데이터베이스</code>를 삭제하기 지우기 위해서는 아래 명령어를 입력해야 합니다.<br>
+        <code class="slash"> /데이터관리 서버데이터관리 종류:기본 데이터베이스 옵션:데이터 베이스 지우기</code></p>
+        <a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991289863531933736/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991289863531933736/unknown.png" alt=""></a></p><br>
+        <p><code>후기 데이터베이스</code>를 삭제하기 지우기 위해서는 아래 명령어를 입력해야 합니다.<br>
+        <code class="slash"> /데이터관리 서버데이터관리 종류:후기 데이터베이스 옵션:데이터 베이스 지우기</code>
+        <a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991289940749058058/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991289940749058058/unknown.png" alt=""></a></p><br>
+          <p class="alert alert-info"><i class="fas fa-exclamation-triangle"></i> 삭제한 데이터베이스의 정보는 다시 복구할 수 없으니 신중히 결정하시길 바랍니다.</p>
+        </section>
+        
+		<hr class="divider">
+		
+		<!-- 기본 명령어
+		============================ -->
+        <section id="idocs_basic_cmd">
+          <h1>기본 명령어</h1>
+          <p>누구나 사용할 수 있는 모스봇의 기본 명령어입니다.</p>
+          <ul>
+            <li><code class="slash">/핑</code> - 모스봇의 latency(지연 시간)를 확인합니다.</li>
+            <li><code class="slash">/아이디얻기 (유저) (역할) (채널) (이모지)</code> - 옵션의 아이디를 얻습니다.</li>
+            <li><code class="slash">/서버정보</code> - 명령어를 입력한 서버의 정보를 확인합니다.</li>
+            <li><code class="slash">/내정보 (유저)</code> - 본인 혹은 유저의 정보를 확인합니다.</li>
+          </ul>
+          <pre>
+<code class="slash_ex">/아이디얻기 (유저) (역할) (채널) (이모지)
+              │     │      │      └─선택 옵션입니다. 
+              │     │      │         선택하고 이모지를 입력하면 이모지의 ID(숫자)를 얻습니다.
+              │     │      └─선택 옵션입니다. 
+              │     │         선택하고 채널을 입력하면 채널의 ID(숫자)를 얻습니다.
+              │     └─선택 옵션입니다. 
+              │        선택하고 역할을 입력하면 역할의 ID(숫자)를 얻습니다.
+              └─선택 옵션입니다. 
+                  선택하고 유저를 입력하면 유저의 ID(숫자)를 얻습니다.</code><code class="slash_ex">/내정보 (유저) 
+          └─선택 옵션입니다. 선택하고 유저를 입력하면 유저의 정보를 확인합니다.
+            옵션을 선택하지 않으면 본인의 정보를 확인합니다.</code></pre>
+            <span class="badge badge-danger text-uppercase mr-2">예시</span><br>
+            <a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991616343256350730/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991616287610519592/unknown.png" alt=""></a><br>
+            <a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991297939240648704/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991296024788344943/unknown.png" alt=""></a><br>
+            <a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991578255096283196/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991615645194145852/unknown.png" alt=""></a><br>
+            <a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991298811504906250/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991296939436036096/unknown.png" alt=""></a><br>
+            
+        </section>
+        
+		<hr class="divider">
+		
+		<!-- 관리 명령어
+		============================ -->
+        <section id="idocs_manage_cmd">
+          <h1>관리 명령어</h1>
+          <p>서버를 관리할 수 있는 명령어입니다.<br>명령어 사용자 및 모스봇에게 특정 디스코드 권한이 필요할 수 있습니다.</p>
+          <ul>
+            <li><code class="slash">/차단 [유저] [메시지_삭제_여부] [이유]</code> - 유저를 차단(ban)합니다.</li>
+            <li><code class="slash">/차단해제 [유저_아이디] [이유]</code> - 유저를 차단 해제(unban)합니다.</li>
+            <li><code class="slash">/청소 [메시지_양]</code> - 명령어를 입력한 채널의 가장 최근 메시지들을 청소(삭제)합니다.</li>
+            <li><code class="slash">/추방 [유저] [이유]</code> - 유저를 추방(kick)합니다.</li>
+          </ul>
+          <p>
+            <pre>
+<code class="slash_ex">/차단 [유저] [메시지 삭제 여부] [이유]       ＜── 차단 시 디스코드 서버에서 IP밴 됩니다.
+        │          │            └─필수 옵션입니다. 
+        │          │              차단하려는 이유를 입력합니다.
+        │          └─필수 옵션입니다. 
+        │            𝟶~𝟽의 숫자를 입력합니다. 𝟶을 입력하면 유저가 보낸 메시지를 삭제하지 않습니다.
+        │            𝟷~𝟽은 유저가 보낸 메시지의 (𝟷~𝟽)일 치를 삭제합니다.
+        └─필수 옵션입니다. 
+          차단할 유저를 찾아 입력합니다.</code><code class="slash_ex">/차단해제 [유저 아이디] [이유]
+              │          └─필수 옵션입니다. 
+              │            차단 해제하려는 이유를 입력합니다.
+              └─필수 옵션입니다. 
+                차단 해제할 유저의 ID(숫자 𝟷𝟾자리)를 입력합니다.
+                ID를 얻는 방법은 [자주 하는 질문]에 자세히 적혀 있습니다.</code><code class="slash_ex">/청소 [메시지 양]
+          └─필수 옵션입니다. 
+            몇 개의 최근 메시지를 삭제할 것인지 숫자로 입력해 주세요. </code><code class="slash_ex">/추방 [유저] [이유]                         ＜── 추방 시 추방당한 유저는 다시 서버에 접속할 수 있습니다.
+        │      └─필수 옵션입니다. 
+        │        추방하려는 이유를 입력합니다.
+        └─필수 옵션입니다. 
+          추방할 유저를 찾아 입력합니다.</code>
+        </section>
+        
+		<hr class="divider">
+		
+        <!-- 경고 명령어
+		============================ -->
+        <section id="idocs_warn_cmd">
+          <h1>경고 명령어</h1>
+          <p>경고 명령어는 차단, 추방 명령어와는 다른 명령어입니다.<br>경고를 받은 유저는 경고가 지워지거나 기본 데이터베이스가 삭제되지 않는 이상 경고가 지워지지 않습니다.</p>
+          <ul>
+            <li><code class="slash">/경고 관리 [관리] [개수] [유저] [이유]</code> - 유저의 경고를 관리합니다.</li>
+            <li><code class="slash">/경고 확인 (유저)</code> - 유저의 경고를 확인하거나 이 서버의 모든 경고들을 확인합니다.</li>
+          </ul>
+          
+<pre><code class="slash_ex">/경고 관리 [관리] [개수] [유저] [이유]
+            │      │      │      └─필수 옵션입니다. 
+            │      │      │        경고하려는 이유를 입력합니다.
+            │      │      └─필수 옵션입니다. 
+            │      │        경고할 유저를 찾아 입력합니다.
+            │      └─필수 옵션입니다. 
+            │         경고 개수를 입력합니다.
+            └─필수 옵션입니다.
+              [경고 추가하기 | 경고 제거하기] 중 하나를 선택합니다.</code><code class="slash_ex">/경고 확인 (유저)
+                └─선택 옵션입니다. 선택하고 유저를 입력하면 유저의 경고를 확인합니다.
+                옵션을 선택하지 않으면 서버의 모든 경고 정보를 확인합니다.</code></pre>
+                <span class="badge badge-danger text-uppercase mr-2">예시</span><br>
+          <a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991577664873832478/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991619857483309096/unknown.png" alt=""></a><br>
+          <a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991620108537577492/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991620069689925642/unknown.png" alt=""></a><br>
+                <p class="alert alert-info">경고 명령어는 <a href="#idocs_makeDatabase">기본 데이터베이스</a>가 있어야 하며 <a target="" href="#idocs_datamanage_cmd">데이터베이스 설정</a>을 마쳐야 사용이 가능합니다.</p>
+        
+        
+              </section>
+		
+        
+		<hr class="divider">
+		
+		<!-- 공지사항 명령어
+		============================ -->
+        <section id="idocs_notice_cmd">
+          <h1>공지사항 명령어</h1>
+          <p>모스봇을 통해 공지사항을 올릴 수 있습니다.</p>
+          <ul>
+            <li><code class="slash">/공지사항 만들기 [공지이름]</code> - 공지사항을 만듭니다.</li>
+            <li><code class="slash">/공지사항 삭제하기</code> - 공지사항을 삭제합니다.</li>
+            <li><code class="slash">/공지사항 수정하기</code> - 공지사항을 수정하기.</li>
+            <li><code class="slash">/공지사항 올리기 [공지이름] (채널)</code> - 공지사항을 올립니다.</li>
+          </ul>
+          </section><br>
+        <!-- 공지사항 만들기
+		============================ -->
+        <section id="idocs_notice_cmd_m">
+          <h2>공지사항 만들기</h2>
+          <p>공지사항을 만듭니다.<br>
+          <code class="slash">/공지사항 만들기 [공지이름]</code></p>
+          <pre><code class="slash_ex">/공지사항 만들기 [공지이름]
+                      └─필수 옵션입니다.
+                        공지의 이름으로 사용할 문자를 입력합니다.</code></pre>
+          <p><b>공지 이름 규칙</b>
+          <ul>
+            <li>한글, 영어, 숫자로만 이름을 지을 수 있습니다.</li>
+            <li>띄어쓰기, 특수문자는 입력할 수 없습니다.</li>
+            <li>2 글자 이상, 10글자 이하여야 합니다.</li>
+            <li>25개까지만 만들 수 있습니다.</li>
+            <li>이미 있는 공지의 이름은 사용할 수 없습니다.</li>
+          </ul>
+          <p class="alert alert-info">공지사항을 성공적으로 만들었다면 자동으로 <a href="#idocs_notice_cmd_e">공지사항 수정하기</a>단계로 이동됩니다.</p></p>
+          <span class="badge badge-danger text-uppercase mr-2">예시</span><br>
+          <a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991649014648930384/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991648891986522203/unknown.png" alt=""></a><br>
+        </section><br>
+        <section id="idocs_notice_cmd_d">
+          <h2>공지사항 삭제하기</h2>
+          <p>공지사항을 삭제합니다.<br>삭제한 공지사항의 정보는 다시 복구할 수 없으니 신중히 결정하시길 바랍니다.<br>
+          <code class="slash">/공지사항 삭제하기</code></p>
+          <span class="badge badge-danger text-uppercase mr-2">예시</span><br>
+          <a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991649570859790356/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991649122098614352/unknown.png" alt=""></a><br>
+        </section><br>
+        <section id="idocs_notice_cmd_e">
+          <h2>공지사항 수정하기</h2>
+          <p>공지사항을 수정합니다.<br>
+          <code class="slash">/공지사항 수정하기</code>
+          </p>
+          <span class="badge badge-danger text-uppercase mr-2">예시</span><br>
+          <a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991649570859790356/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991649524592410634/unknown.png" alt=""></a><br>
+        </section><br>
+        <section id="idocs_notice_cmd_s">
+          <h2>공지사항 올리기</h2>
+          <p>공지사항을 삭제합니다.<br>
+          <code class="slash">/공지사항 올리기 [공지이름] (채널)</code></p>
+          <pre><code class="slash_ex">/공지사항 올리기 [공지이름] (채널)
+                     │       └─선택 옵션입니다. 선택하고 채널을 입력하면 채널에 공지사항을 올립니다.
+                     │         옵션을 선택하지 않으면 명령어를 입력한 채널에 공지사항을 올립니다.
+                     └─필수 옵션입니다.
+                      이전에 만든 공지 이름을 입력합니다.</code></pre>
+                      <span class="badge badge-danger text-uppercase mr-2">예시</span><br>
+                      <a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991649759469252608/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991649686572236860/unknown.png" alt=""></a><br>
+        </section>
+		
+		<hr class="divider">
+		
+		<!-- 게임 명령어
+		============================ -->
+        <section id="idocs_game_cmd">
+          <h1>게임 명령어</h1>
+            <p>모스봇의 게임 명령어입니다.<br>
+              <ul>
+                <li><code class="slash">/게임 기억력</code> - 기억력 게임을 완료하고 포인트를 받습니다.</li>
+                <li><code class="slash">/게임 내포인트 (유저)</code> - 본인 혹은 다른 유저의 포인트를 확인합니다.</li>
+                <li><code class="slash">/게임 뽑기 [배팅포인트)]</code> - 배팅한 포인트를 걸고 뽑기 게임을 진행합니다.</li>
+                <li><code class="slash">/게임 슬롯머신 [배팅포인트]</code> - 배팅한 포인트를 걸고 주사위 게임을 진행합니다.</li>
+                <li><code class="slash">/게임 주사위 [배팅포인트]</code> - 배팅한 포인트를 걸고 슬롯머신 게임을 진행합니다.</li>
+                <li><code class="slash">/게임 출석</code> - 출석체크하고 포인트를 받습니다.</li>
+                <li><code class="slash">/게임 코인거래 [거래방식]</code> - 가상 코인을 매수하거나 매도합니다.</li>
+                <li><code class="slash">/게임 코인정보 [옵션]</code> - 가상 코인의 정보를 확인합니다.</li>
+                <li><code class="slash">/게임 포인트랭킹</code> - 명령어를 입력한 서버에서의 포인트 랭킹을 확인합니다.</li>
+                <li><code class="slash">/게임 포인트전송 [유저] [포인트]</code> - 유저에게 본인의 포인트를 전송합니다.</li>
+              </ul>
+              <p class="alert alert-info">대부분의 게임 명령어는 <a href="#idocs_makeDatabase">기본 데이터베이스</a>가 있어야 합니다.</p></p></section>
+              <br>
+          <section id="idocs_game_cmd_remember">
+            <h2>기억력 게임</h2>
+            <p>9개의 버튼을 표시되는대로 외워 순차적으로 누릅니다.<br>
+            <code class="slash">/게임 기억력</code>
+            </p><a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991605683592105994/remember.gif"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991605683592105994/remember.gif" alt=""></a>
+          </section><br>
+          <section id="idocs_game_cmd_mypoint">
+            <h2>내 포인트 보기</h2>
+            <p>본인 혹은 다른 유저의 보유 포인트, 얻은 포인트, 잃은 포인트를 확인할 수 있습니다.<br>
+            <code class="slash">/게임 내포인트 (유저)</code>
+            </p><a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991612227515842570/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991612227515842570/unknown.png" alt=""></a>
+            <pre><code class="slash_ex">/게임 내포인트 (유저)
+                 └─선택 옵션입니다. 선택하고 유저를 입력하면 유저의 포인트 정보를 확인합니다.
+                    옵션을 선택하지 않으면 본인의 포인트 정보를 확인합니다.</code></pre>
+          </section><br>
+          <section id="idocs_game_cmd_choose">
+            <h2>뽑기 게임</h2>
+            <p>9개의 버튼 중 꽝을 피해 아이템을 뽑아 배팅 포인트의 몇 배를 다시 돌려받을 수 있는 게임입니다.<br>아이템은 1.5배, 2.0배의 아이템이 있으며 각각 배팅 포인트의 1.5배, 2.0배를 추가로 얻으실 수 있습니다.<br>
+            <code class="slash">/게임 뽑기 [배팅포인트]</code>
+            </p><a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991656895075065926/w.gif"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991656895075065926/w.gif" alt=""></a>
+            <pre><code class="slash_ex">/게임 뽑기 [배팅포인트]
+                └─필수 옵션입니다.
+                    배팅할 포인트를 입력합니다.</code></pre>
+          </section><br>
+          <section id="idocs_game_cmd_slot">
+            <h2>슬롯머신 게임</h2>
+            <p>화면에 보이는 3개의 그림을 일치 시켜 배팅 포인트의 배수를 다시 돌려받을 수 있는 게임입니다.<br>그림이 두 개 일치하면 배팅포인트의 2배, 세 개 일치하면 3배를 돌려받습니다.<br>
+            <code class="slash">/게임 슬롯머신 [배팅포인트]</code>
+            </p><a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991657632744099841/l.gif"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991657632744099841/l.gif" alt=""></a>
+            <pre><code class="slash_ex">/게임 슬롯머신 [배팅포인트]
+                    └─필수 옵션입니다.
+                        배팅할 포인트를 입력합니다.</code></pre>
+          </section><br>
+          <section id="idocs_game_cmd_dice">
+            <h2>주사위 게임</h2>
+            <p>주사위 두 개를 던져 합이 봇이 던진 두 개의 주사위 합보다 높으면 <br>배팅 포인트의 두 배를 돌려받을 수 있습니다.<br>
+            <code class="slash">/게임 주사위 [배팅포인트]</code>
+            </p><a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991659673105211422/d.gif"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991659673105211422/d.gif" alt=""></a>
+            <pre><code class="slash_ex">/게임 주사위 [배팅포인트]
+                   └─필수 옵션입니다.
+                       배팅할 포인트를 입력합니다.</code></pre>
+          </section><br>
+          <section id="idocs_game_cmd_attend">
+            <h2>출석하기</h2>
+            <p>매일마다 출석 체크를 하고 서버에서 설정한 포인트를 받습니다.<br>
+            <code class="slash">/게임 출석</code>
+            </p><a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991660310509400184/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991660310509400184/unknown.png" alt=""></a>
+          </section><br>
+          <section id="idocs_game_cmd_cointrade">
+            <h2>코인 거래하기</h2>
+            <p>모스봇의 가상 코인을 매수|매도할 수 있습니다.<br>코인 게임의 데이터는 모스봇이 통합해 관리합니다.<br>순위 및 가격은 모든 모스봇 이용 유저에게 동일하게 표시됩니다.<br>따로 포인트나 돈이 들지 않습니다.<br>
+            <code class="slash">/게임 코인거래 [거래방식]</code>
+            </p><a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991661664602701904/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991661664602701904/unknown.png" alt=""></a>
+            <pre><code class="slash_ex">/게임 코인거래 [거래방식]
+                   └─필수 옵션입니다. [코인을 매도(판매)하기|코인을 매수(구매)하기]
+                      거래 방식을 선택합니다. </code></pre>
+          </section><br>
+          <section id="idocs_game_cmd_coininfo">
+            <h2>코인 정보 보기</h2>
+            <p>모스봇의 가상 코인의 정보를 확인합니다.<br>순위, 그래프, 가격 정보를 확인합니다.<br>
+            <code class="slash">/게임 코인정보 [옵션]</code>
+            </p><a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991662644698300436/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991662644698300436/unknown.png" alt=""></a>
+            <pre><code class="slash_ex">/게임 코인정보 [옵션]
+                  └─필수 옵션입니다.
+                     옵션을 선택합니다. </code></pre>
+          </section><br>
+          <section id="idocs_game_cmd_rkpoint">
+            <h2>포인트랭킹 보기</h2>
+            <p>서버에서의 포인트 순위를 확인합니다.<br>
+            <code class="slash">/게임 포인트랭킹</code>
+            </p><a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991663251605692447/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991663251605692447/unknown.png" alt=""></a>
+          </section><br>
+          <section id="idocs_game_cmd_sdpoint">
+            <h2>포인트전송하기</h2>
+            <p>다른 유저에게 본인의 포인트를 일부 전송합니다.<br>
+            <code class="slash">/게임 포인트전송 [유저] [포인트]</code>
+            </p><a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991663927677173790/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991663927677173790/unknown.png" alt=""></a>
+            <pre><code class="slash_ex">/게임 포인트전송 [유저] [포인트]
+                   │      └─필수 옵션입니다.
+                   │        얼마의 포인트를 보낼 건지 입력합니다.
+                   └─필수 옵션입니다.
+                     포인트를 받을 유저를 찾아 입력합니다.</code></pre>
+          </section>
+          <p class="alert alert-info">상대 유저의 데이터가 생성된 상태여야 포인트를 보낼 수 있습니다.</p></p></section><br>
+		
+		<hr class="divider">
+		
+        <!-- 데이터 관리 명령어
+		============================ -->
+        <section id="idocs_datamanage_cmd">
+          <h1>데이터 관리 명령어</h1>
+          <p>서버 데이터 및 유저 데이터를 관리할 수 있습니다.</p>
+        </section><br>
+        <section id="idocs_datamanage_cmd_guild">
+          <h2>서버 데이터 관리 </h2>
+          <p>서버 데이터를 관리할 수 있습니다.<br>서버 데이터베이스를 삭제하거나, 조회할 수 있으며 게임 및 경고 옵션을 수정할 수 있습니다.</p>
+          <code class="slash">/데이터관리 서버데이터관리 [종류] [옵션]</code>
+          <pre><code class="slash_ex">/데이터관리 서버데이터관리 [종류] [옵션]
+                             │     └─필수 옵션입니다. [만들기|지우기|조회하기|설정하기]
+                             │       데이터 베이스에 어떤 작업을 할 것인지 하나를 선택합니다.
+                             └─필수 옵션입니다. [기본 데이터베이스|후기 데이터베이스]
+                               기본, 후기 데이터베이스 중 하나를 선택합니다.</code></pre>
+        </section><br>
+        <section id="idocs_datamanage_cmd_user">
+          <h2>유저 데이터 관리 </h2>
+          <p>유저 데이터를 관리할 수 있습니다.<br>유저의 데이터를 삭제하거나 조회할 수 있으며 보유 포인트를 수정할 수 있습니다.</p>
+          <code class="slash">/데이터관리 유저데이터관리 [유저] [옵션]</code>
+          <pre><code class="slash_ex">/데이터관리 유저데이터관리 [유저] [옵션]
+                             │     └─필수 옵션입니다. [삭제,조회,수정]
+                             │       유저 데이터에 어떤 작업을 할 것인지 하나를 선택합니다.
+                             └─필수 옵션입니다.
+                               유저를 찾아 입력합니다.</code></pre>
+        </section>
+
+
+        
+		<hr class="divider">
+		
+		<!-- 출근 명령어
+		============================ -->
+        <section id="idocs_work_cmd">
+          <h1>출근 명령어</h1>
+            <p>일부 커뮤니티를 위한 명령어입니다.<br>출근을 입력하면 현재 시간으로 출근 메시지가 출력됩니다.<br>퇴근을 입력하면 전에 입력했던 출근시간과 비교해 근무 시간을 출력합니다.</p>
+            <code class="slash">/도장 출근하기</code><br>
+            <code class="slash">/도장 퇴근하기</code>
+            <p><span class="badge badge-danger text-uppercase mr-2">예시</span><br>
+          <a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991864127955943505/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991864426917535764/unknown.png" alt=""></a><br>
+          <a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991864551790354522/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991864486380187689/unknown.png" alt=""></a></p>
+        </section>
+		
+		<hr class="divider">
+		
+		<!-- 레벨 명령어
+		============================ -->
+    <section id="idocs_level_cmd">
+      <h1>레벨 명령어</h1>
+        <p>메시지를 전송할때마다 경험치를 얻어 레벨 업을 할 수 있는 명령어입니다.<br>기본적으로 비활성화되어 있습니다.</p>
+        <code class="slash">/레벨 카드</code><br>
+        <code class="slash">/레벨 관리</code><br>
+        <code class="slash">/레벨 초기화</code><br>
+        <a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991865919427072060/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991865919427072060/unknown.png" alt=""></a><br>
+        <p><span class="badge badge-danger text-uppercase mr-2">예시</span><br>
+      <a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991866219537911898/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991866283819794432/unknown.png" alt=""></a><br>
+      <a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991866424203169812/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991866505639755776/unknown.png" alt=""></a></p>
+    </section>
+    <hr class="divider">
+		<!-- 분석 명령어
+		============================ -->
+		<section id="idocs_research_cmd">
+		  <h1>분석 명령어</h1>
+		  <p>서버의 초대코드, 비활성 유저를 분석합니다.</p>
+		  <h2>초대코드 분석</h2>
+		  <code class="slash">/분석 초대코드</code><br>
+      <a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991867434271252574/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991867434271252574/unknown.png" alt=""></a><br>
+      <br><h2>비활성 유저 분석</h2>
+		  <code class="slash">/분석 비활성유저 [기간]</code><br>
+      <a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991870372955832451/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991870372955832451/unknown.png" alt=""></a><br>
+      <pre><code class="slash_ex">/분석 비활성유저 [기간]
+                   └─필수 옵션입니다.
+                      𝟷~𝟹𝟶의 숫자를 입력합니다.</code></pre>
+    </section>
+		
+		<hr class="divider">
+		
+		<!-- 환영인사 명령어
+		============================ -->
+		<section id="idocs_welcome_cmd">
+		  <h1>환영인사 명령어</h1>
+		  <p>새로운 유저가 접속하면 환영인사 메시지가 올라옵니다.</p>
+      <code class="slash">/환영인사 [옵션]</code><br>
+		  <a class="popup-img" href="https://cdn.discordapp.com/attachments/951922282744406017/962292503321653278/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/951922282744406017/962292503321653278/unknown.png" alt=""></a><br>
+      <pre><code class="slash_ex">/환영인사 [옵션]
+            └─필수 옵션입니다. [환영인사 미리보기|환영인사 설정하기]
+               옵션 중 하나를 선택합니다.</code></pre>  
+    </section>
+		
+		<hr class="divider">
+		
+		<!-- 후기 명령어
+		============================ -->
+		<section id="idocs_review_cmd">
+      <h1>후기 명령어</h1>
+		  <p>다른 유저에게 후기를 남깁니다.</p>
+      <code class="slash">/후기 올리기 [유저] [후기내용]</code><br>
+      <code class="slash">/후기 조회하기 [옵션]</code>
+      <p><span class="badge badge-danger text-uppercase mr-2">예시</span><br>
+        <a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991874493922414703/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991873988512989214/unknown.png" alt=""></a><br>
+        <a class="popup-img" href="https://cdn.discordapp.com/attachments/991278563259056208/991874851293909042/unknown.png"><img class="img-fluid border" src="https://cdn.discordapp.com/attachments/991278563259056208/991874909166911508/unknown.png" alt=""></a></p>
+        <pre><code class="slash_ex">/후기 올리기 [유저] [후기내용]
+               │       └─필수 옵션입니다. 
+               │          후기 내용을 입력합니다.
+               └─필수 옵션입니다.
+                 후기를 받을 유저를 찾아 입력합니다.</code><code class="slash_ex">/후기 조회하기 [옵션]
+                  └─필수 옵션입니다.
+                    옵션 중 하나를 선택합니다.</code></pre>
+        <p class="alert alert-info">후기 명령어를 사용하려면 <a href="#idocs_makeDatabase">후기 데이터베이스</a>가 있어야 합니다.</p>
+        </section>
+		
+		<hr class="divider">
+	
+		
+		<!-- 자주묻는 질문
+		============================ -->
+		<section id="idocs_faq">
+          <h2>자주묻는 질문</h2>
+          <p class="text-4">이 외의 질문은 <a target="_blank" href="http://discord.gg/VsP65QuWbR">서포트 서버</a>에서 질문해 주세요.</p>
+          
+		  <div class="row">
+          <div class="col-lg-12">
+            <div class="accordion accordion-alterate arrow-right" id="popularTopics">
+              <div class="card">
+                <div class="card-header" id="heading1">
+                  <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">빗금 명령어를 사용할 수 없습니다.</a> </h5>
+                </div>
+                <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#popularTopics">
+                  <div class="card-body"> 빗금 명령어를 사용할 수 있는 권한이 있는지 확인해 주세요. 빗금 명령어를 사용하려면 [서버 혹은 채널 설정] - [역할 설정]에서 '애플리케이션 명령어 사용'권한이 활성화되어 있는지 확인해 주세요. 만약 활성화가 되어 있는데도 빗금 명령어를 사용할 수 없다면 모스봇을 서버에 다시 초대해 주세요.</div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading2">
+                  <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">간혹 명령어 사용이 안 되거나 버튼을 누르면 오류가 발생합니다.</a> </h5>
+                </div>
+                <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#popularTopics">
+                  <div class="card-body"> 간혹 발생하는 오류는 주로 모스봇과 디스코드 서버의 연결 문제가 생겼을 때 발생합니다. 지속적으로 발생하는 오류가 아니라면 무시하고 이용해 주시길 바라며 지속적으로 오류가 발생한다면 [디스코드 모스봇 서포트 서버] 혹은 [디스코드 Boss#3333]으로 문의바랍니다.  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading3">
+                  <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">서버 데이터베이스는 만들었는데 유저 데이터는 어떻게 만드나요?</a> </h5>
+                </div>
+                <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#popularTopics">
+                  <div class="card-body"> 유저 데이터는 게임, 출석 명령어를 이용하면 자동으로 생성됩니다. </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading4">
+                  <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">로그 채널을 설정하고 싶은데 어떤 명령어를 사용해야 하나요?</a> </h5>
+                </div>
+                <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#popularTopics">
+                  <div class="card-body"> 로그 채널은 [데이터 관리 명령어]를 사용하여 설정할 수 있습니다. </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading5">
+                  <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">유저, 채널, 역할의 ID를 복사하는 법을 모르겠어요.</a> </h5>
+                </div>
+                <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#popularTopics">
+                  <div class="card-body"> ID를 얻는 방법은 많지만 (/아이디얻기) 명령어를 이용하면 간편하게 얻으실 수 있습니다. </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading6">
+                  <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">모스봇이 오프라인이에요.</a> </h5>
+                </div>
+                <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#popularTopics">
+                  <div class="card-body"> 모스봇을 구동 중인 서버가 업데이트 혹은 기타 문제로 다운되었을 수도 있습니다. 오프라인이 되고 나서 수 분 내에 자동으로 봇이 작동합니다. 만약 장기간(몇 시간 이상) 오프라인이라면 [디스코드 모스봇 서포트 서버] 혹은 [디스코드 Boss#3333]으로 알려주시길 바랍니다.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </section>
+        
+		<hr class="divider">
+        
+        <!-- 출처
+		============================ -->
+        <section id="idocs_source_credits">
+          <h2>출처</h2>
+          <h4>이미지:</h4>
+          <ul>
+            <li>freepik - <a target="_blank" href="https://www.freepik.com/">https://www.freepik.com/</a></li>
+          </ul>
+		  <h4>페이지 폰트:</h4>
+          <ul>
+            <li>Icons Font Face - <a target="_blank" href="https://fontawesome.com/">https://fontawesome.com/</a></li>
+            <li>Google Fonts - <a target="_blank" href="https://fonts.google.com/">https://fonts.google.com/</a></li>
+          </ul>
+          <h4>페이지 스크립트:</h4>
+          <ul>
+            <li>jQuery - <a target="_blank" href="http://www.jquery.com/">http://www.jquery.com/</a></li>
+            <li>Bootstrap 4 - <a target="_blank" href="http://getbootstrap.com/">http://getbootstrap.com/</a></li>
+			<li>Highlight Js - <a target="_blank" href="https://highlightjs.org/">https://highlightjs.org/</a></li>
+			<li>jQuery easing - <a target="_blank" href="http://gsgd.co.uk/sandbox/jquery/easing/">http://gsgd.co.uk/sandbox/jquery/easing/</a></li>
+            <li>Magnific Popup - <a target="_blank" href="http://dimsemenov.com/plugins/magnific-popup/">http://dimsemenov.com/plugins/magnific-popup/</a></li>
+          </ul>
+        </section>
+        
+		<hr class="divider">
+		
+		<!-- 서포트서버
+		============================ -->
+        <section id="idocs_support">
+          <h2>서포트서버</h2>
+          <p><a class="btn btn-primary" target="_blank" href="http://discord.gg/VsP65QuWbR">서포트 서버</a></p>
+		  
+        </section>
+		
+		<hr class="divider">
+
+    <!-- 개인정보처리방침
+		============================ -->
+    <section id="idocs_privacypolicy">
+      <h2>모스봇 개인정보처리방침</h2>
+      <p>본 방침은 2022년 7월 11일부터 적용됩니다.<br>2022년 7월 4일 최종 수정.</p>
+      <h3>어떤 개인 정보를 수집하나요?</h3>
+      <b>명령어 사용 시 (게임, 경고 등 맞춤형 명령어인 경우에만)</b>
+      <ul>
+        <li>디스코드 서버 ID</li>
+        <li>디스코드 유저 ID</li>
+        <li>디스코드 채널 ID</li>
+      </ul>
+      <b>오류 발생 시</b>
+      <ul>
+        <li>디스코드 서버 이름</li>
+        <li>디스코드 유저 이름</li>
+      </ul>
+      <h3>왜 개인 정보를 수집하나요?</h3>
+      <ul>
+        <li>사용자에게 맞춤형 서비스 제공 및 봇 통계 작성</li>
+      </ul>
+      <h3>개인 정보는 얼마 동안 보관되나요?</h3>
+      <ul>
+        <li>모스봇 서비스 종료 시까지</li>
+      </ul>
+      <h3>개인 정보를 삭제하려면 어떻게 하나요?</h3>
+      <ul>
+        <li><code class="slash">/데이터관리</code> 명령어를 사용해 삭제할 수 있습니다.</li>
+        <li>서포트 서버에서 문의해 삭제할 수 있습니다.</li>
+      </ul>
+  
+  
+    </section>
+
+<hr class="divider">
+		
+		
+        <!-- 업데이트로그
+		============================ -->
+		
+        <section id="idocs_updatelog">
+          <h2>업데이트 로그</h2>
+          <p class="text-4">모스봇의 업데이트 기록을 볼 수 있습니다.</p>
+
+          <h3 id="v22-5">2022년 5월 업데이트 기록</h3>
+          <small class="text-muted">(2022 - 05 - 05)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-info">수정</span> 모스야 경고해 명령어 사용 중 경고 기록이 없던 유저에게 경고를 부여할 때마다 오류가 발생하는 문제를 해결했습니다.</li>
+            <li><span class="badge badge-info">수정</span> 모스야 도움말 명령어 중 코인 게임 명령어 확인하기 버튼이 작동하지 않는 문제를 해결했습니다.</li>
+            <li><span class="badge badge-info">수정</span> 데이터 관리 시스템 변경 후 모스야 추방해, 모스야 차단해, 모스야 차단해제해 명령어 사용 시 로그가 올라오지 않는 문제를 해결했습니다.</li>
+            <li><span class="badge badge-danger">삭제</span> 모스야 로그채널 명령어가 삭제되었습니다. 모스야 서버데베설정을 입력해 로그 채널을 설정할 수 있습니다.</li>
+          </ul>
+
+          <small class="text-muted">(2022 - 05 - 04)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-info">수정</span> 모스봇의 데이터 관리 시스템을 수정, 변경하였습니다.</li>
+            <li><span class="badge badge-info">수정</span> 2022 - 05 - 04부터 모스야 뽑기, 모스야 타자, 모스야 주사위 게임 이용 후 얻은 포인트와 잃은 포인트가 기록 및 표시됩니다.</li>
+            <li><span class="badge badge-info">수정</span> 모스야 포인트지급, 모스야 포인트차감 명령어에 상대 유저의 보유 포인트가 같이 표시됩니다.</li>
+            <li><span class="badge badge-info">수정</span> 모스야 내데베삭제, 모스야 유저데베삭제 명령어에 삭제되는 데이터값들이 표시됩니다.</li>
+            <li><span class="badge badge-info">수정</span> 모스야 출석 명령어에 누적 출석일이 같이 표시됩니다.</li>
+            <li><span class="badge badge-success">추가</span> 모스야 내포인트 명령어에 게임을 통해 얻고, 잃은 포인트가 같이 표시됩니다.</li>
+            <li><span class="badge badge-success">추가</span> 모스야 주사위 명령어가 리뉴얼 되었습니다.</li>
+            <li><span class="badge badge-success">추가</span> 모스야 서버데베설정 명령어가 리뉴얼 되었습니다.</li>            
+          </ul>
+
+
+          <hr class="divider">
+          <h3 id="v22-4">2022년 4월 업데이트 기록</h3>
+          <small class="text-muted">(2022 - 04 - 15)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-info">수정</span> 모스봇의 후기 관련 모든 명령어가 리뉴얼되었습니다.</li>
+          </ul>
+
+          <small class="text-muted">(2022 - 04 - 13)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-info">수정</span> 모스봇의 코인 게임이 리뉴얼되었습니다.</li>
+          </ul>
+
+          <small class="text-muted">(2022 - 04 - 09)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-info">수정</span> 모스야 타자 게임의 포인트의 밸런스를 수정하였습니다.</li>
+            <li><span class="badge badge-success">추가</span> 모스야 환영인사 명령어가 추가되었습니다.</li>
+          </ul>
+
+          <small class="text-muted">(2022 - 04 - 06)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-success">추가</span> 모스야 매칭 게임이 추가되었습니다.</li>
+          </ul>
+
+          <small class="text-muted">(2022 - 04 - 05)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-info">수정</span> 모스야 차단해</span>를 이용해 서버에 없는 유저도 차단할 수 있습니다.</li>
+          </ul>
+
+          <small class="text-muted">(2022 - 04 - 04)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-info">수정</span> 모스야 뽑기 게임의 작동 방식이 일부 변경되었습니다.</li>
+            <li><span class="badge badge-info">수정</span> 모스야 데이터베이스 암호등록, 모스야 데이터베이스 IP등록 명령어가 작동하지 않던 문제를 해결했습니다.</li>
+          </ul>
+
+          <small class="text-muted">(2022 - 04 - 01)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-success">추가</span> 공지 관련 명령어가 추가되었습니다.</li>
+            <li><span class="badge badge-info">수정</span> 모스야 공지수정 명령어로 썸네일, 이미지 부분을 공백으로 설정하고 모스야 공지올려 혹은 모스야 공지확인 명령어 사용 시 에러가 발생하는 문제 해결.</li>
+          </ul>
+
+          <hr class="divider">
+
+          <h3 id="v22-3">2022년 3월 업데이트 기록</h3>
+          <small class="text-muted">(2022 - 03 - 27)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-info">수정</span> 모스야 코인매수, 모스야 포인트전송, 모스야 내데베삭제 명령어를 사용할 수 없던 문제를 해결했습니다.</li>
+          </ul>
+
+
+          <small class="text-muted">(2022 - 03 - 26)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-success">추가</span> 모스야 차단해제해 명령어가 추가되었습니다.</li>
+          </ul>
+
+          <small class="text-muted">(2022 - 03 - 24)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-success">추가</span> 최근 모스봇 업데이트로 인해 명령어 작동 방식이 변경되었으며 새로워진 작동 방식 때문에 오류 발생 빈도가 늘고 있습니다.</li>
+          </ul>
+
+
+          <small class="text-muted">(2022 - 03 - 15)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-info">수정</span> 모스야 코인그래프, 모스야 내데베생성 명령어가 작동하지 않던 문제를 해결했습니다.</li>
+          </ul>
+
+          <small class="text-muted">(2022 - 03 - 14)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-info">수정</span> 기존 명령어들이 대부분 변경되었습니다.</li>
+            <li><span class="badge badge-success">추가</span> 모스야 도움말입력 시 출력되는 메시지가 새롭게 바뀌었습니다.</li>
+            <li><span class="badge badge-success">추가</span> 모스봇 서포트 서버를 제작 중에 있습니다.</li>
+          </ul>
+
+          <small class="text-muted">(2022 - 03 - 02)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-info">수정</span> 모스야 타자 게임의 모든 한글, 영어 사진들이 변경되었습니다.</li>
+          </ul>
+          
+          <hr class="divider">
+
+          <h3 id="v22-2">2022년 2월 업데이트 기록</h3>
+          <small class="text-muted">(2022 - 02 - 24)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-info">수정</span> 모스야 서버 데이터 설정 명령어 내 경고 기능 사용할 역할을 설정할 때 헷갈리지 않게 일부 설명을 추가했습니다.</li>
+          </ul>
+
+          <small class="text-muted">(2022 - 02 - 21)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-info">수정</span> 모스야 경고해, 모스야 추방해, 모스야 차단해 명령어 사용 중 오류가 발생했을 때 왜 오류가 발생했는지 더 자세하게 알려줍니다.</li>
+          </ul>
+
+          <small class="text-muted">(2022 - 02 - 03)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-success">추가</span> 모스봇 웹 페이지에 모스봇의 패치노트를 확인할 수 있는 `업데이트 기록 보기` 버튼이 생성되었습니다.</li>
+          </ul>
+
+          <hr class="divider">
+
+          <h3 id="v22-1">2022년 1월 업데이트 기록</h3>
+          <small class="text-muted">(2022 - 01 - 25)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-success">추가</span> 파이브엠 서버 운영자를 위한 명령어들이 추가되었습니다.</li>
+          </ul>
+
+          <small class="text-muted">(2022 - 01 - 20)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-success">추가</span> 모스봇 웹 페이지가 개설되었습니다. </li>
+            <li><span class="badge badge-info">수정</span> 모스야 도움말 문구에 서포트 서버 링크를 웹 페이지 링크로 변경했습니다.</li>
+          </ul>
+
+          <small class="text-muted">(2022 - 01 - 20)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-success">추가</span> 모스봇 웹 페이지가 개설되었습니다. </li>
+          </ul>
+
+          <small class="text-muted">(2022 - 01 - 19)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-success">추가</span> 명령어 사용 후 오류가 발생했을때 오류 메시지 하단의 이 오류에 대한 개발자의 답변을 듣고 싶어요 버튼을 누르면
+              개발자가 해당 오류의 로그를 확인하고 봇을 이용하여 디엠으로 오류에 대한 해답이나 답변을 보내드립니다.</li>
+          </ul>
+          
+          <small class="text-muted">(2022 - 01 - 11)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-success">추가</span> 모스야 출근해 명령어가 추가되었습니다.</li>
+            <li><span class="badge badge-success">추가</span> 모스야 도움말 명령어 페이지에 커뮤니티 명령어 탭이 추가되었습니다.</li>
+            <li><span class="badge badge-info">수정</span> 모스야 경고해 명령어 사용 후 출력되는 로그의 양식을 일부 수정했습니다.</li>
+          </ul>
+          
+
+          <hr class="divider">
+
+          <h3 id="v21-12">2021년 12월 업데이트 기록</h3>
+
+          <small class="text-muted">(2021 - 12 - 30)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-success">추가</span> 파이브엠 관련 명령어에 마이너스 고유번호를 입력할 수 있게됩니다.</li>
+            <li><span class="badge badge-success">추가</span> 파이브엠 데이터베이스 관련 명령어 사용 중 발생한 오류 메시지에 오류의 이유가 출력됩니다.</li>
+            <li><span class="badge badge-info">수정</span> 모스봇 DM에서 올바른 명령어를 입력해도 오류가 발생했습니다. 문구가 출력되는 문제를 수정했습니다.</li>
+          </ul>
+
+          <small class="text-muted">(2021 - 12 - 24)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-info">수정</span> 모스야 차단해 명령어 사용 후 메시지에 태그, 아이디가 출력되지 않는 문제를 수정했습니다.</li>
+          </ul>
+          
+          <small class="text-muted">(2021 - 12 - 23)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-success">추가</span> 모스야 추방해, 모스야 차단해 명령어 사용 후 출력되는 기본 메시지에도 태그, 아이디가 포함되어 출력됩니다.</li>
+            <li><span class="badge badge-success">추가</span> 모스야 서버 데이터 설정에 경고 기능 설정이 추가 되었습니다.</li>
+            <li><span class="badge badge-success">추가</span> 모스야 경고해 명령어가 추가되었습니다.</li>
+          </ul>
+
+          <small class="text-muted">(2021 - 12 - 13)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-info">수정</span> 리얼월드 데이터베이스를 사용하는 서버에서 모스야 파엠 고유번호확인 명령어를 사용할 수 없는 문제를 해결했습니다.</li>
+          </ul>
+
+          <small class="text-muted">(2021 - 12 - 03)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-success">추가</span> 파이브엠 서버 운영자를 위한 명령어들이 추가되었습니다.</li>
+            <li><span class="badge badge-success">추가</span> 모스봇 프로필에 Add to Server 버튼이 생성되었습니다.</li>
+          </ul>
+
+          <hr class="divider">
+
+          <h3 id="v21-11">2021년 11월 업데이트 기록</h3>
+          <small class="text-muted">(2021 - 11 - 29)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-success">추가</span> 모스야 차단해, 모스야 추방해 명령어 사용 시 출력되는 로그 메시지에 관리자, 처벌자 아이디가 추가됩니다.</li>
+            <li><span class="badge badge-info">수정</span> 모스야 내정보 명령어 사용 시 출력되는 메시지 중 서버 닉네임이 삭제되고 멘션이 추가되었습니다.</li>
+          </ul>
+
+          <small class="text-muted">(2021 - 11 - 07)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-success">추가</span> 모스봇이 접속하는 서버의 오너(주인)에게만 권한 안내 메시지를 DM으로 발송합니다.</li>
+          </ul>
+
+
+          <hr class="divider">
+
+          <h3 id="v21-10">2021년 10월 업데이트 기록</h3>
+          <small class="text-muted">(2021 - 10 - 30)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-info">수정</span> 코인 그래프가 작동하지 않던 문제 해결.</li>
+          </ul>
+
+          <small class="text-muted">(2021 - 10 - 29)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-success">추가</span> 코인 게임 출시.</li>
+          </ul>
+
+          <small class="text-muted">(2021 - 10 - 26)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-info">수정</span> 모스 매니저#1008 에서 모스봇#1008로 봇 이름이 변경되었습니다.</li>
+          </ul>
+
+          <small class="text-muted">(2021 - 10 - 25)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-success">추가</span> 모스야 서버정보 아이콘 추가.</li>
+            <li><span class="badge badge-success">추가</span> 모스야 내정보 아이콘 추가.</li>
+            <li><span class="badge badge-danger">삭제</span> 모스야 유저정보 명령어 삭제.</li>
+          </ul>
+
+
+          <small class="text-muted">(2021 - 10 - 20)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-success">추가</span> 모스봇 인증 배지 추가됨</li>
+          </ul>
+
+          <small class="text-muted">(2021 - 10 - 13)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-info">수정</span> 모스야 차단해 버그 해결 및 리뉴얼</li>
+            <li><span class="badge badge-info">수정</span> 모스야 추방해 버그 해결 및 리뉴얼</li>
+            <li><span class="badge badge-info">수정</span> 모스야 출석 임베드 컬러 변경</li>
+          </ul>
+
+          <small class="text-muted">(2021 - 10 - 03)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-success">추가</span> 모스야 도움말 추후 업데이트를 위한 페이지 기능 추가.</li>
+          </ul>
+
+          <hr class="divider">
+
+          <h3 id="v21-9">2021년 9월 업데이트 기록</h3>
+          <small class="text-muted">(2021 - 09 - 23)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-info">수정</span> 일부 문법 수정.</li>
+          </ul>
+
+          <small class="text-muted">(2021 - 09 - 11)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-info">수정</span> 모스야 뽑기 명령어 사용 중 오류 발생 시 출력되는 안내문 추가 및 문법 수정.</li>
+            <li><span class="badge badge-info">수정</span> 모스야 유저정보 명령어 사용 중 오류 발생 시 출력되는 안내문 추가.</li>
+            <li><span class="badge badge-info">수정</span> 모스야 지급해 명령어 사용 중 오류 발생 시 출력되는 안내문 추가 및 문법 수정.</li>
+            <li><span class="badge badge-info">수정</span> 모스야 차감해 명령어 사용 중 오류 발생 시 출력되는 안내문 추가 및 문법 수정.</li>
+          </ul>
+
+          <small class="text-muted">(2021 - 09 - 10)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-info">수정</span> 모스야 뽑기 이용시 간혹 꽝이 8개가 나오는 오류 해결.</li>
+            <li><span class="badge badge-info">수정</span> 모스야 뽑기 서버 데이터베이스 없이 뽑기 게임 이용시 발생하는 오류 해결.</li>
+            <li><span class="badge badge-info">수정</span> 일부 문법 수정.</li>
+          </ul>
+
+          <small class="text-muted">(2021 - 09 - 05)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-success">추가</span> 모스야 서버정보 명령어를 사용하기 위해서는 모스봇에 `서버 관리하기` 권한이 필요합니다.</li>
+          </ul>
+
+          <small class="text-muted">(2021 - 09 - 01)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-info">수정</span> 모스야 뽑기 관련 복합 오류 해결</li>
+            <li><span class="badge badge-success">추가</span> 모스야 버그해결 주사위, 모스야 버그해결 뽑기 명령어 추가.</li>
+          </ul>
+
+          <hr class="divider">
+
+          <h3 id="v21-8">2021년 8월 업데이트 기록</h3>
+          <small class="text-muted">(2021 - 08 - 30)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-info">수정</span> 모스야 후기랭킹 명령어 입력시 유저 목록이 제대로 출력되지 않는 오류 해결.</li>
+          </ul>
+
+          <small class="text-muted">(2021 - 08 - 30)</small>
+          <ul class="changelog">
+            <li><span class="badge badge-success">추가</span> 모스야 서버정보 명령어 입력시 제공되는 정보 몇가지 추가. (서버 데이터베이스, 후기 데이터베이스)</li>
+            <li><span class="badge badge-success">추가</span> 후기 시스템 관련 명령어 추가.</li>
+            <li><span class="badge badge-success">추가</span> 차단, 추방 기능 이용시 전송될 로그 채널 설정 명령어 추가.</li>
+          </ul>
+		  
+		  <hr class="divider">
+        </section>        
+        
+      </div>
+    </div>
+	
+  </div>
+  <!-- Content end --> 
+  
+  <!-- Footer
+  ============================ -->
+  <footer id="footer" class="section bg-dark footer-text-light">
+  </footer>
+  <!-- Footer end -->
+  
+</div>
+<!-- Document Wrapper end --> 
+
+<!-- Back To Top --> 
+<a id="back-to-top" data-toggle="tooltip" title="맨 위로" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+
+<!-- JavaScript
+============================ -->
+<script src="assets/vendor/jquery/jquery.min.js"></script> 
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<!-- Highlight JS -->
+<script src="assets/vendor/highlight.js/highlight.min.js"></script> 
+<!-- Easing --> 
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> 
+<!-- Magnific Popup --> 
+<script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script> 
+<!-- Custom Script -->
+<script src="assets/js/theme.js"></script>
+</body>
+</html>
