@@ -1,4 +1,5 @@
-User-agent: *
-Allow: /
+User-agent: Googlebot 
+Disallow: 
 
-Sitemap: https://mosbot.cf/sitemap.xml
+User-agent: * 
+Disallow: /
