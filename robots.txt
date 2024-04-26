@@ -1,5 +1,4 @@
-User-agent: Googlebot 
-Disallow: 
-
 User-agent: * 
-Disallow: /
+Allow: /docs
+Allow: /discord
+Allow: /
