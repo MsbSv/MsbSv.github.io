@@ -1,4 +1,5 @@
 User-agent: * 
 Allow: /docs
+Allow: /docs/index
 Allow: /discord
 Allow: /
