@@ -4021,7 +4021,7 @@ input, select, textarea {
 			-webkit-transform: translateX(2em);
 			-ms-transform: translateX(2em);
 			transform: translateX(2em);
-			opacity: 0;
+			opacity: 1;
 		}
 
 		body.is-preload #header .image {
@@ -4029,11 +4029,11 @@ input, select, textarea {
 			-webkit-transform: translateY(4em);
 			-ms-transform: translateY(4em);
 			transform: translateY(4em);
-			opacity: 0;
+			opacity: 1;
 		}
 
 			body.is-preload #header .image img {
-				opacity: 0;
+				opacity: 1;
 			}
 
 	@media screen and (max-width: 980px) and (orientation: portrait) {
