@@ -79,23 +79,6 @@ input, select, textarea {
     justify-content: center;
     background: #f0f0f0; /* 배경색 추가 */
 }
-.custom-counter-heading {
-    width: 80vw;
-    height: 35vh;
-    background: linear-gradient(45deg, gold, orangered);
-    border-radius: 1rem;
-    text-align: center;
-    margin-bottom: 1.4rem;
-    padding: 0 .5rem;
-    display: grid;
-    place-items: center;
-    box-shadow: 0 .2rem .2rem #0006;
-    transition: .3s ease-in-out;
-}
-
-.custom-counter-heading h1 {
-    font: 700 2.8rem sans-serif;
-}
 
 .custom-counters {
     display: flex;
