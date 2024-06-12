@@ -4,6 +4,43 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+const counters = document.querySelectorAll(".custom-counter");
+
+counters.forEach(counter => {
+    let initialCount = 0;
+    const finalCount = parseInt(counter.dataset.count);
+
+    const updateCounting = () => {
+        if (initialCount < finalCount) {
+            if (initialCount < 1000) {
+                initialCount += 5;
+                counter.innerText = initialCount;
+            } else if (initialCount < 10000) {
+                initialCount += 100;
+                counter.innerText = (initialCount / 1000).toFixed(1) + 'K+';
+            } else if (initialCount < 1000000) {
+                initialCount += 5000;
+                counter.innerText = (initialCount / 1000).toFixed(1) + 'K+';
+            } else {
+                initialCount += 500000;
+                counter.innerText = (initialCount / 1000000).toFixed(1) + 'M+';
+            }
+
+            if (initialCount >= finalCount) {
+                counter.innerText = formatCount(finalCount);
+                clearInterval(counting);
+            }
+        }
+    };
+
+    const formatCount = count => {
+        if (count < 1000) return count;
+        if (count < 1000000) return (count / 1000).toFixed(1) + 'K+';
+        return (count / 1000000).toFixed(1) + 'M+';
+    };
+
+    const counting = setInterval(updateCounting,7);
+});
 (function($) {
 
 	var	$window = $(window),
