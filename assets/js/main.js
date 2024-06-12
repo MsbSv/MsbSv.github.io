@@ -39,7 +39,7 @@ counters.forEach(counter => {
         return (count / 1000000).toFixed(1) + 'M+';
     };
 
-    const counting = setInterval(updateCounting,7);
+    const counting = setInterval(updateCounting,8);
 });
 (function($) {
 
