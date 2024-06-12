@@ -71,6 +71,74 @@ input, select, textarea {
 	appearance: none;
 }
 
+
+.custom-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0; /* 배경색 추가 */
+}
+.custom-counter-heading {
+    width: 80vw;
+    height: 35vh;
+    background: linear-gradient(45deg, gold, orangered);
+    border-radius: 1rem;
+    text-align: center;
+    margin-bottom: 1.4rem;
+    padding: 0 .5rem;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 .2rem .2rem #0006;
+    transition: .3s ease-in-out;
+}
+
+.custom-counter-heading h1 {
+    font: 700 2.8rem sans-serif;
+}
+
+.custom-counters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+	padding-bottom: 20px;
+    gap: 1rem; /* 간격 추가 */
+}
+
+.custom-counter-wrapper {
+    width: 500px;
+    min-width: 250px; /* 최소 너비 추가 */
+    height: 9rem;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: .3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    background: #F0F0F0 ; /* 기본 배경 */
+}
+.custom-counter-icon img {
+    width: 5rem; /* 너비 조절 */
+    height: 5rem; /* 높이 조절 */
+    object-fit: contain; /* 이미지 비율 유지 */
+}
+
+.custom-counter-info {
+    color: #000000;
+}
+
+.custom-counter-info h3.custom-counter {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.custom-counter-info p {
+    margin-top: .4rem;
+	color: #3b3b3b;
+}
+
 /* Basic */
 
 	@-ms-viewport {
@@ -115,7 +183,7 @@ input, select, textarea {
 /* Type */
 
 	body {
-		color: #661b7c;
+		color: #9e9e9e;
 	}
 
 	html, input, select, textarea {
@@ -200,8 +268,9 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 1.75em;
+		font-size: 1.3em;
 		line-height: 1.5em;
+		color: #ffffffd7;
 	}
 
 	h3 {
@@ -324,7 +393,7 @@ input, select, textarea {
 		color: #828282;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h3, h4, h5, h6 {
 		color: #828282;
 	}
 
@@ -3804,7 +3873,7 @@ input, select, textarea {
 			color: #ffffff;
 		}
 
-		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
+		#header h1,  #header h3, #header h4, #header h5, #header h6 {
 			color: #ffffff;
 		}
 
