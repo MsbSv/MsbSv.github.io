@@ -3,3 +3,4 @@ Allow: /docs
 Allow: /docs/index
 Allow: /discord
 Allow: /
+Allow: /policy
