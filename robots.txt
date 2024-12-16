@@ -4,3 +4,4 @@ Allow: /docs/index
 Allow: /discord
 Allow: /
 Allow: /policy
+Allow: /invite
