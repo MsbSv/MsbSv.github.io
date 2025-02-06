@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(49, 4, 92);
+    background-color: #222327;
     font-family: "Gothic A1", sans-serif;
 }
 .header {
@@ -18,7 +18,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    background: rgb(23, 0, 44);
+    background: #16171a;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     border-radius: 8px;
     padding: 10px 20px;
@@ -69,7 +69,7 @@ body {
     width: 100%;
     height: 800px;
     box-sizing: border-box; 
-    background-color: rgb(23, 0, 44);
+    background-color: #16171a;
     color: #ccc;
     
 }
