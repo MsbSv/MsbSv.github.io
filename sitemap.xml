@@ -11,19 +11,19 @@ layout: null
 
 
 <url>
-  <loc>https://mosbot.cf/</loc>
-  <lastmod>2022-08-02T00:51:52+00:00</lastmod>
+  <loc>https://www.mosbot.xyz/</loc>
+  <lastmod>2025-06-15</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://mosbot.cf/docs/index.html</loc>
-  <lastmod>2022-08-02T00:51:52+00:00</lastmod>
+  <loc>https://www.mosbot.xyz/discord</loc>
+  <lastmod>2025-06-15</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mosbot.cf/index.html</loc>
-  <lastmod>2022-08-02T00:51:52+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://www.mosbot.xyz/docs/index.html</loc>
+  <lastmod>2025-06-15</lastmod>
+  <priority>0.70</priority>
 </url>
 
 
