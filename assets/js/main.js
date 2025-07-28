@@ -14,33 +14,39 @@ counters.forEach(counter => {
         if (initialCount < finalCount) {
             if (initialCount < 1000) {
                 initialCount += 5;
-                counter.innerText = initialCount;
             } else if (initialCount < 10000) {
                 initialCount += 100;
-                counter.innerText = (initialCount / 1000).toFixed(1) + 'K+';
             } else if (initialCount < 1000000) {
                 initialCount += 5000;
-                counter.innerText = (initialCount / 1000).toFixed(1) + 'K+';
             } else {
                 initialCount += 500000;
-                counter.innerText = (initialCount / 1000000).toFixed(1) + 'M+';
             }
 
             if (initialCount >= finalCount) {
-                counter.innerText = formatCount(finalCount);
+                initialCount = finalCount;
                 clearInterval(counting);
             }
+
+            counter.innerText = formatCount(initialCount);
         }
     };
 
     const formatCount = count => {
-        if (count < 1000) return count;
-        if (count < 1000000) return (count / 1000).toFixed(1) + 'K+';
-        return (count / 1000000).toFixed(1) + 'M+';
+        if (count < 1000) return count.toString();
+
+        const 만 = Math.floor(count / 10000);
+        const 천 = Math.floor((count % 10000) / 1000);
+
+        let result = '';
+        if (만 > 0) result += `${만}만`;
+        if (천 > 0) result += ` ${천}천 개`;
+
+        return result.trim() + '+';
     };
 
-    const counting = setInterval(updateCounting,8);
+    const counting = setInterval(updateCounting, 8);
 });
+
 (function($) {
 
 	var	$window = $(window),
