@@ -1,158 +1,402 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<!doctype html>
+<html lang="ko">
 
-		<meta property="og:title" content="모스봇 | 정책" />
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://mosbot.cf/policy/" />
-		<meta property="og:image" content="" />
-		<meta property="og:description" content="모스봇의 개인정보 보호 정책 및 서비스 이용약관을 확인할 수 있습니다." />
-		<meta name="twitter:card" content="summary_large_image">
-		
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
-		<link href="/docs/assets/images/MI.png" rel="icon"  type="image/icon type">
-		<title>모스봇 | 정책</title>
-		<meta name="description" content="디스코드 봇, 모스봇입니다.">
-		<meta name="author" content="baby.boss">
+<head>
+    <title>모스봇 - 서비스 이용약관 & 개인정보 처리방침</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="모스봇 - 서비스 이용약관 & 개인정보 처리방침" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mosbot.xyz/policy" />
+    <meta property="og:image" content="https://i.postimg.cc/TwqjppWc/1.png" />
+    <meta property="og:description" content="모스봇 - 서비스 이용약관 & 개인정보 처리방침" />
+    <meta property="og:site_name" content="모스봇 - 서비스 이용약관 & 개인정보 처리방침" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta name="theme-color" content="#16171A">
+    <meta name="Keywords" content="디스코드 봇" />
+    <meta name="keywords" content="모스봇, 디코봇, 디스코드">
+    <meta name="twitter:card" content="summary_large_image">
+    <link href="/static/img/DNL.webp" rel="icon" type="image/icon type">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --accent1: #7b3fe4;
+            --accent2: #c83ceb;
+            --bg: #2a2a2e;
+            --card: #0f1116;
+            --muted: #bdbdbd;
+            --glass: rgba(255, 255, 255, 0.04);
+            --maxwidth: 1100px;
+            --radius: 12px;
+            font-family: "Noto Sans KR", Pretendard, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            color: #e9eef8;
+        }
+
+        html,
+        body {
+            height: 100%;
+            background:
+                var(--bg);
+            margin: 0;
+            padding: 24px;
+            box-sizing: border-box;
+        }
+
+        .wrap {
+            max-width: var(--maxwidth);
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 18px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: none;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 1.15rem;
+            margin: 0;
+            color: #fff
+        }
+
+        p.lead {
+            margin: 4px 0 0;
+            color: var(--muted);
+            font-size: 0.95rem
+        }
+
+        .consent-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+            margin-top: 18px;
+        }
+
+        @media (max-width:900px) {
+            .consent-grid {
+                grid-template-columns: 1fr
+            }
+        }
+
+        .panel {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            padding: 14px;
+            border-radius: var(--radius);
+            display: flex;
+            flex-direction: column;
+            min-height: 420px;
+        }
+
+        .panel .panel-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .panel .panel-head h2 {
+            margin: 0;
+            font-size: 1rem
+        }
 
 
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400;700&display=swap" rel="stylesheet">
+        .version {
+            font-size: 0.78rem;
+            color: var(--muted)
+        }
 
-		<link rel="stylesheet" href="assets/policy.css">
-		
-					
-	</head>
-	<body>
-		
-		<div class="navtabs">
-			<a href="https://mosbot.xyz/" class="navtab">[모스봇 메인]</a>
-			<a href="https://mosbot.xyz/docs/" class="navtab">[모스봇 문서]</a>
-			<a href="https://mosbot.xyz/policy/" class="navtab active underline">[모스봇 약관]</a>
-			<a href="http://set.mosbot.xyz/" class="navtab">[모스봇 관리패널]</a>
-		  </div>
-		<div class="container">
-			<div class="box" id="home">
-				<h2>서비스 이용약관</h2>
-				<p>
-					<h3>2025년 1월 3일 최종 업데이트</h3><br>
-					당사는 웹사이트 mosbot.xyz(이하 "사이트"), 디스코드 봇인 모스봇(이하 "회사", "우리", "우리를", "우리의")으로 사용자들에게 서비스를 제공하고 있습니다. <br>
-					본 약관은 귀하와 당사 간에 서비스의 사용과 관련된 법적 계약을 구성하며, 서비스를 사용함으로써 본 약관에 동의한 것으로 간주됩니다. <br>
-					약관에 동의하지 않으면 서비스를 사용할 수 없습니다.<br>
-					<br>
-					<h4>1. 서비스 제공 및 목적</h4><br>
-					본 서비스는 디스코드 플랫폼에서 사용되는 봇 및 관련 기능을 포함합니다.<br>
-					본 서비스를 사용할 때 제공되는 정보는 법률이나 규정에 위배되거나, 해당 국가의 개인 및 기업에 배포하거나 사용하기 위한 것이 아닙니다.<br>
-					서비스의 일부 기능, 예를 들어 티켓 메시지 기록 기능을 활성화한 경우, 해당 채널에서 이루어지는 메시지 내용이 저장될 수 있습니다. 이 점을 유념해 주세요.<br>
-					<br>
-					<h4>2. 지적 재산권</h4><br>
-					당사는 서비스의 소스 코드, 데이터베이스, 기능, 웹사이트 디자인, 텍스트, 사진, 그래픽(이하 "콘텐츠")에 대한 지적 재산권을 보유합니다.<br>
-					귀하는 당사의 서비스, 콘텐츠 및 마크를 본 약관에 따라 비상업적 목적으로만 사용할 수 있습니다. 상업적 사용을 원할 경우, 사전 서면 동의가 필요합니다.<br>
-					<br>
-					<h4>3. 금지된 활동</h4><br>
-					서비스는 당사가 특별히 승인한 경우를 제외하고 상업적 활동에 사용할 수 없습니다.<br>
-					다음과 같은 행위를 하지 않도록 동의합니다:<br>
-					-서비스에서 데이터를 무단으로 수집하거나 콘텐츠를 복사 및 배포하는 행위<br>
-					-서비스의 보안 기능을 우회하거나 비활성화하는 행위<br>
-					-타인의 정보를 사취하거나 비밀번호 등을 불법적으로 수집하는 행위<br>
-					-서비스 또는 다른 사용자를 괴롭히거나 방해하는 행위<br>
-					-기타 불법적인 행위나 서비스의 정상적인 운영을 방해하는 행위<br>
-					<br>
-					<h4>4. 서비스 관리</h4><br>
-					당사는 본 약관을 위반하는 사용자에 대해 법적 조치를 취할 수 있습니다.<br>
-					귀하가 게시한 콘텐츠 또는 데이터를 당사의 단독 재량으로 삭제하거나 제한할 수 있습니다.<br>
-					<br>
-					<h4>5. 개인정보 보호</h4><br>
-					당사는 개인정보 보호 및 보안을 중요하게 생각하며, 개인정보 보호 정책에 따라 귀하의 정보를 처리합니다. 당사의 개인정보 보호 정책은 www.mosbot.xyz/policy/ 에서 확인할 수 있습니다.<br>
-					티켓 메시지 기록 기능이 활성화된 경우, 해당 채널에서 이루어지는 메시지 내용도 서버에 저장됩니다. 이 정보는 보안 및 분석 목적을 위해 사용됩니다.<br>
-					<br>
-					<h4>6. 광고 및 제3자 링크</h4><br>
-					서비스 내에서 광고가 표시될 수 있으며, 당사는 광고주와의 관계를 책임지지 않습니다.<br>
-					광고와 관련된 정보에 대해서는 직접 광고주와 연락하시기 바랍니다.<br>
-					<br>
-					<h4>7. 기간 및 종료</h4><br>
-					본 약관은 귀하가 서비스를 사용하는 동안 유효합니다.<br>
-					당사는 귀하의 서비스 이용을 종료하거나 서비스를 수정 및 종료할 수 있는 권리를 보유합니다.<br>
-					<br>
-					<h4>8. 수정 및 중단</h4><br>
-					당사는 사전 통지 없이 서비스의 내용을 수정하거나 삭제할 수 있습니다.<br> 
-					서비스의 일시 중단 또는 중단에 대해 책임지지 않으며, 수정 사항에 대해서는 본 약관을 통해 안내할 것입니다.<br>
-					<br>
-					<h4>9. 분쟁 해결</h4><br>
-					본 약관에 관한 모든 분쟁은 대한민국 법원에서 해결됩니다.<br>
-					<br>
-					<h4>10. 기타</h4><br>
-					본 약관은 서비스 제공자와 사용자 간의 완전한 계약을 구성합니다.<br>
-					본 약관의 일부 조항이 무효가 된 경우 나머지 조항은 여전히 유효합니다.<br>
-					<br>
-					<h4>11. 연락처</h4><br>
-					서비스에 관한 불만 사항을 해결하거나 서비스 사용에 관한 추가 정보를 받으려면 다음 주소로 연락하십시오.<br>
-					디스코드 서포트 서버(https://discord.gg/tp4aDmcDFB)<br>
-				</p>
-			</div>
-			<div class="box">
-				<h2>개인정보보호 정책</h2>
-				<p>
-					<h3>2025년 1월 3일 최종 업데이트</h3><br>
-					본 개인정보처리방침은 디스코드 봇 모스봇(이하 "봇")과 관련된 개인정보 처리에 대한 내용을 담고 있습니다.<br>
-					본 방침에 동의하지 않을 경우, 봇의 서비스 이용이 제한될 수 있습니다.<br>
-					<br>
-					<h4>1. 수집하는 개인정보</h4><br>
-					봇은 다음과 같은 정보를 수집합니다:<br>
-					1) 자동으로 수집되는 정보<br>
-					<h5>웹사이트 이용 시</h5><br>
-					-IP 주소<br>
-					-브라우저 및 장치 정보(운영 체제, 언어 설정, 참조 URL 등)<br>
-					<h5>봇 이용 시</h5><br>
-					-디스코드 프로필 정보(프로필 이름, 프로필 ID)<br>
-					-접속 서버 정보(서버 이름, 서버 ID)<br>
-					-앱 사용 정보(예: 메시지 ID)<br>
-					2) 티켓 채널 메시지 기록 기능 활성화 시<br>
-					티켓 기능이 활성화된 채널에서 기록 옵션이 켜진 경우, 사용자가 채널에 남긴 메시지 내용을 저장합니다.<br>
-					<br>
-					<h4>2. 수집한 개인정보의 이용 목적</h4><br>
-					수집된 정보는 다음 목적을 위해 사용됩니다:<br>
-					1. 서비스 제공 및 운영<br>
-					2. 서비스 품질 개선<br>
-					3. 보안 및 사기 방지<br>
-					4. 사용자와의 소통<br>
-					5. 법적 의무 준수<br>
-					<br>
-					<h4>3. 개인정보의 제공 및 공유</h4><br>
-					봇은 원칙적으로 사용자의 개인정보를 제3자와 공유하지 않습니다. <br>
-					단, 다음의 경우에는 예외적으로 정보를 제공할 수 있습니다:<br>
-					1. 법적 요구가 있을 경우: 법령에 따라 개인정보 제공 의무가 있는 경우.<br>
-					2. 사업 양도: 서비스 운영권의 양도, 합병, 인수 등에 따라 정보가 이전될 수 있음.<br>
-					<br>
-					<h4>4. 개인정보의 보관 기간</h4><br>
-					수집된 개인정보는 서비스 제공 기간 동안 보관되며, 이용 목적이 달성되면 즉시 삭제됩니다. <br>
-					단, 다음의 경우에는 법령에 따라 일정 기간 보관할 수 있습니다:<br>
-					서비스 종료 또는 계정 삭제 요청 시 데이터 삭제<br>
-					법적 의무에 따른 보존 기간<br>
-					<br>
-					<h4>5. 개인정보 삭제 요청 방법</h4><br>
-					다음 방법을 통해 개인정보 삭제를 요청할 수 있습니다:<br>
-					디스코드 서포트 서버(https://discord.gg/tp4aDmcDFB)를 통해 개발자에게 문의<br>
-					봇 내 제공되는 명령어를 이용하여 직접 삭제 요청<br>
-					<br>
-					<h4>6. 사용자의 권리</h4><br>
-					사용자는 자신의 개인정보에 대해 다음과 같은 권리를 행사할 수 있습니다:<br>
-					-개인정보 열람 및 수정 요청<br>
-					-개인정보 삭제 요청<br>
-					-개인정보 처리 제한 요청<br>
-					권리 행사는 서포트 서버 또는 봇 명령어를 통해 가능합니다.<br>
-					<br>
-					<h4>7. 보안 및 데이터 보호</h4><br>
-					봇은 사용자의 개인정보를 안전하게 보호하기 위해 합리적인 기술적, 관리적 조치를 취하고 있습니다.<br>
-					<br>
-					<h4>8. 정책 변경에 대한 고지</h4><br>
-					본 방침이 변경될 경우, 디스코드 서버 또는 웹사이트를 통해 공지합니다.<br>
-				</p>
-			</div>
-		</div>
-	</body>
+        .doc {
+            background: rgba(0, 0, 0, 0.18);
+            border-radius: 10px;
+            padding: 14px;
+            flex: 1;
+            overflow: auto;
+            line-height: 1.6;
+            color: #e6e7ea;
+            font-size: 0.95rem;
+            border: 1px solid rgba(255, 255, 255, 0.02)
+        }
+
+        .doc h3 {
+            margin-top: 12px;
+            color: #fff;
+            font-size: 0.98rem
+        }
+
+        .doc h4 {
+            margin: 8px 0;
+            color: var(--muted);
+            font-size: 0.9rem
+        }
+
+        .doc p,
+        .doc li {
+            color: #cfd8e6;
+            font-size: 0.94rem;
+        }
+
+        .doc ul {
+            padding-left: 1.05rem
+        }
+
+        .consent-footer {
+            margin-top: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .checkboxes {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .checkbox {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.95rem;
+            color: var(--muted);
+        }
+
+        .checkbox input {
+            width: 18px;
+            height: 18px;
+            border-radius: 4px
+        }
+
+        .actions {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .action-panel {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            padding: 20px;
+            border-radius: var(--radius);
+            margin-top: 22px;
+            text-align: center;
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .btn {
+            border: rgb(65, 65, 65) 1px solid;
+            background-color: #dbdbdb;
+            color: rgb(54, 54, 54);
+            padding: 12px 22px;
+            border-radius: 10px;
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 0.95rem;
+            transition: background .2s, transform .15s;
+        }
+
+        .btn:hover {
+            background-color: #f1f1f1;
+            transform: translateY(-2px);
+        }
+
+
+        .note {
+            font-size: 0.86rem;
+            color: var(--muted);
+            margin-top: 8px;
+        }
+
+        .btn:focus,
+        .tag:focus,
+        .checkbox input:focus {
+            outline: 3px solid rgba(123, 63, 228, 0.18);
+            outline-offset: 2px;
+            border-radius: 8px
+        }
+
+        @media (max-width:480px) {
+            body {
+                padding: 14px
+            }
+
+            .doc {
+                font-size: 0.92rem
+            }
+
+            .btn {
+                padding: 10px 12px;
+                font-size: 0.95rem
+            }
+
+            .logo {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap" role="main">
+        <header>
+            <div class="logo">
+                <img src="/static/img/MIS.png" alt="모스봇 로고">
+            </div>
+            <div>
+                <h1>모스봇 - 서비스 이용약관 &amp; 개인정보 처리방침</h1>
+                <p class="lead">처음 이용 시, 문서 업데이트 시 두 항목에 대해 모두 동의해야 서비스 사용이 가능합니다.</p>
+            </div>
+        </header>
+
+        <div class="consent-grid">
+
+            <!-- TOS -->
+            <section class="panel" aria-labelledby="tos-title">
+                <div class="panel-head">
+                    <h2 id="tos-title">서비스 이용약관 (Terms of Service)</h2>
+                    <div style="display:flex;gap:8px;align-items:center">
+                        <div class="version">업데이트 2025-12-05</div>
+                    </div>
+                </div>
+
+                <article class="doc" id="doc-tos" tabindex="0" role="document" aria-label="서비스 이용약관">
+                    <h3>제1조 (목적)</h3>
+                    <p>본 약관은 모스봇(이하 "서비스")이 제공하는 봇 및 웹 관리패널 서비스(이하 "서비스")의 이용과 관련하여 회사와 이용자 간의 권리·의무·책임사항 및 기타 필요한 사항을
+                        규정함을 목적으로 합니다.</p>
+
+                    <h3>제2조 (정의)</h3>
+                    <ul>
+                        <li>서비스: Discord 봇 및 웹 기반 관리패널 일체</li>
+                        <li>이용자: 서비스를 이용하는 모든 개인 또는 단체</li>
+                    </ul>
+
+                    <h3>제3조 (이용계약의 성립)</h3>
+                    <p>이용계약은 이용자가 본 약관에 동의하고 서비스의 사용 신청을 완료함으로써 성립합니다.</p>
+
+                    <h3>제4조 (서비스 제공 범위)</h3>
+                    <ul>
+                        <li>봇의 기본 기능, 대시보드(통계, 실시간 현황 등), 티켓 로그 열람 등</li>
+                        <li>관리자 권한이 필요한 기능의 경우 해당 서버의 관리자 권한 소유자에게만 제공됩니다.</li>
+                    </ul>
+
+                    <h3>제5조 (금지행위)</h3>
+                    <ul>
+                        <li>봇의 정상 기능을 방해하는 행위</li>
+                        <li>부정한 방법으로 타 계정/서버의 데이터를 수집·보관하는 행위</li>
+                    </ul>
+
+                    <h3>제6조 (면책 및 책임제한)</h3>
+                    <p>서비스는 외부 Discord API 정책 변경, 디스코드 자체 장애, 네트워크 문제 등 서비스 제공자의 통제를 벗어난 사유에 대해 책임을 지지 않습니다. 단, 고의·중대한
+                        과실이 입증된 경우를 제외합니다.</p>
+
+                    <h3>제7조 (계약해지 및 데이터 삭제)</h3>
+                    <p>이용자가 서비스 이용을 중단하거나 데이터 삭제를 요청할 경우 사유 확인 후 관련 데이터를 삭제합니다. (로그 보존기간 등 내부 정책을 따름)</p>
+
+                    <h3>제8조 (분쟁해결)</h3>
+                    <p>서비스 이용과 관련된 분쟁은 대한민국 법을 따르며, 관할 법원은 서비스 사업자의 소재지 관할 법원으로 합니다.</p>
+
+                    <h4>부칙</h4>
+                    <p>본 약관은 2025-12-05부터 적용됩니다.</p>
+                </article>
+            </section>
+
+            <!-- Privacy -->
+            <section class="panel" aria-labelledby="privacy-title">
+                <div class="panel-head">
+                    <h2 id="privacy-title">개인정보 처리방침 (Privacy Policy)</h2>
+                    <div style="display:flex;gap:8px;align-items:center">
+                        <div class="version">업데이트 2025-12-05</div>
+                    </div>
+                </div>
+
+                <article class="doc" id="doc-privacy" tabindex="0" role="document" aria-label="개인정보 처리방침">
+                    <h3>1. 수집하는 정보</h3>
+                    <ul>
+                        <li>Discord 식별자: 프로필 ID, 프로필 이름, 아바타 이미지 등</li>
+                        <li>서버 식별자: 서버 ID, 서버 이름, 서버 아이콘 등</li>
+                        <li>티켓 로그: 메시지 내용, 첨부파일 URL, 타임스탬프 (티켓 기능 동작 시 수집)</li>
+                        <li>접속 로그: 관리패널 접속 기록 및 실시간 뷰어 수 (통계/운영 목적)</li>
+                    </ul>
+
+                    <h3>2. 수집 목적</h3>
+                    <ul>
+                        <li>서비스 제공 및 유지보수</li>
+                        <li>티켓 처리 기록 보관 및 지원</li>
+                        <li>서비스 모니터링(실시간 이벤트), 오류 추적</li>
+                        <li>부정행위 탐지 및 보안</li>
+                    </ul>
+
+                    <h3>3. 보관 기간</h3>
+                    <p>티켓 로그: 기본 90일 (요청 시 즉시 삭제 요청 가능). 실시간 이벤트는 원칙적으로 저장하지 않으며, 저장할 경우 명시적으로 고지합니다.</p>
+
+                    <h3>4. 제3자 제공</h3>
+                    <p>법적 요청 또는 사용자 동의가 있는 경우에 한해 제3자에게 제공합니다. 그 외에는 제공하지 않습니다.</p>
+
+                    <h3>5. 이용자의 권리</h3>
+                    <p>정보 열람·정정·삭제 요청 가능. 삭제 요청 시 내부 정책과 법적 보존 의무를 검토 후 처리합니다.</p>
+
+                    <h3>6. 기술적 안전조치</h3>
+                    <ul>
+                        <li>HTTPS 전송, DB 접근 최소 권한, 암호화(필요 시)</li>
+                        <li>관리자 패널 접근은 OAuth2 인증 및 권한 확인</li>
+                    </ul>
+
+                    <h3>7. 문의 및 책임자</h3>
+                    <p>문의: 모스봇 서포트 서버</p>
+                </article>
+            </section>
+
+        </div><!-- consent-grid -->
+
+        <!-- consent action -->
+        <div class="action-panel">
+            <h3 style="margin:0 0 8px;font-size:1rem;color:#fff">바로가기</h3>
+            <div class="action-buttons">
+                <button class="btn" id="webbtn">모스봇 관리패널 접속하기</button>
+                <button class="btn" id="discbtn">모스봇 서포트 서버 접속하기</button>
+            </div>
+        </div>
+
+    </div><!-- wrap -->
+
+    <script>
+        document.getElementById('webbtn').addEventListener('click', async function () {
+            window.location.href = "/";
+        });
+        document.getElementById('discbtn').addEventListener('click', async function () {
+            window.location.href = "https://mosbot.xyz/discord";
+        });
+    </script>
+</body>
+
 </html>
